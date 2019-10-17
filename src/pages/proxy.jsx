@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="proxyOrg" />
-    <h1>Proxy Organizacion</h1>
+    <h1>Proxy Organizacion 2019</h1>
   </Layout>
 )
 
