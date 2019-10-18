@@ -5,7 +5,7 @@ import Footer from '../sections/Footer/footer';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="proxy" />
+    <SEO title="Proxy" />
     <h1>Proxy 2019</h1>
     <Footer />
   </Layout>
