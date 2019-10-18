@@ -1,3 +1,5 @@
+@import '../../scss/settings/vars.scss';
+
 .media {
   padding-bottom: 5%;
   padding-top: 5%;
@@ -13,6 +15,7 @@
 }
 
 .media__icon {
+  margin-left: 2%;
   width: 10%;
 
   @media (min-width: $breakpoint-md) {
@@ -28,22 +31,18 @@
   }
 }
 
-.media__link + .media__link {
-  padding-left: 2%;
-}
-
-.media__icon--pdl {
-  padding-left: 40%;
+.media__icon--mgl {
+  margin-left: 40%;
 
   @media (min-width: $breakpoint-lg) {
-  padding-left: 35%;
+  margin-left: 35%;
   }
 
   @media (min-width: $breakpoint-xl) {
-    padding-left: 30%;
+    margin-left: 30%;
   }
 
   @media (min-width: 1600px) {
-    padding-left: 26%;
+    margin-left: 26%;
   }
 }

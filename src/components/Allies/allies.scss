@@ -1,7 +1,9 @@
+@import '../../scss/settings/vars.scss';
+
 .allies {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 5% 10% 5%;
+  margin: 5% 5% 10% 5%;
 
   @media (min-width: $breakpoint-md) {
     display: block;
