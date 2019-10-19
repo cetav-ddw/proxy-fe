@@ -1,12 +1,15 @@
 import React from 'react';
-import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Header from '../components/layouts/header';
 
 const IndexPage = () => (
-  <Layout>
+  // posibles soluciones (nota para que no se me olvide)
+  // poner variables constantes de el nombre de mi router para
+  // hacer logica y decidir en que momentos se renderea video en (infoartist y todas las obras)
+  <>
     <SEO title="proxy" />
-    <h1>Proxy 2019</h1>
-  </Layout>
+    <Header />
+  </>
 );
 
 export default IndexPage;
