@@ -1,10 +1,14 @@
 import React from 'react';
 import SEO from '../components/seo';
+import Header from '../components/layouts/header';
+import '../scss/styles.scss';
+
+const titlePage = 'obras';
 
 const Obras = () => (
   <>
-    <SEO title="obras" />
-    <h1>Obras</h1>
+    <SEO title={titlePage} />
+    <Header pageName={titlePage} />
   </>
 );
 

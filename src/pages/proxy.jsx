@@ -1,10 +1,14 @@
 import React from 'react';
 import SEO from '../components/seo';
+import Header from '../components/layouts/header';
+import '../scss/styles.scss';
+
+const titlePage = 'proxy';
 
 const Proxy = () => (
   <>
-    <SEO title="proxyOrg" />
-    <h1>Proxy Organizacion 2019</h1>
+    <SEO title={titlePage} />
+    <Header pageName={titlePage} />
   </>
 );
 

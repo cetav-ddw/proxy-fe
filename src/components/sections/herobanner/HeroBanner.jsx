@@ -1,13 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Video from '../../units/Video';
 import './herobanner.scss';
 
-const HeroBanner = () => (
-  // la ruta del video va cambair dependiendo en que página me encuentre
-  // hacer lógica ...
+const HeroBanner = ({ pathVideo }) => (
   <div className="herobanner">
-    <Video className="herobanner__video" poster="bg-footer-h" source="main.mp4" />
+    <Video className="herobanner__video" poster="bg-footer-h.jpg" source={pathVideo} />
   </div>
 );
+
+HeroBanner.propTypes = {
+  pathVideo: PropTypes.string.isRequired,
+};
 
 export default HeroBanner;
