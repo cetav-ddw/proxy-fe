@@ -1,24 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './layout.scss';
+// aquí estará el componente de Footer (se usa en todos los pages)
 
-const Header = ({ head, sections, allies }) => (
+const MainLayout = ({ head, sections }) => (
   <>
-    <header className="header">
-      {head}
-    </header>
+    {head}
     {sections}
-    <footer className="footer">
-      {allies}
-    </footer>
   </>
 );
 
-Header.propTypes = {
+MainLayout.propTypes = {
   head: PropTypes.node.isRequired,
   sections: PropTypes.node.isRequired,
-  allies: PropTypes.node.isRequired,
 };
 
 
-export default Header;
+export default MainLayout;

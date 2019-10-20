@@ -1,8 +1,7 @@
 import React from 'react';
 import SEO from '../components/seo';
+import Header from '../components/sections/header/Header';
 import MainLayout from '../components/layouts/MainLayout';
-import EventData from '../components/sections/eventDate/EventDate';
-import Nav from '../components/sections/nav/Nav';
 import '../scss/styles.scss';
 
 const titlePage = 'obras';
@@ -14,17 +13,12 @@ const Obras = () => (
       head={
         (
           <>
-            <EventData />
-            <Nav />
+            <Header videoSrc="main.mp4" />
           </>
         )
       }
 
       sections={
-        <p>waiting</p>
-      }
-
-      allies={
         <p>waiting</p>
       }
     />
