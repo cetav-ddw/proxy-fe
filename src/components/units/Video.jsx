@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Video = ({ source, className, poster }) => (
-  <video className={className} poster={poster} autoPlay muted loop>
+const Video = ({ source, variant, poster }) => (
+  <video className={variant} poster={poster} autoPlay muted loop>
     <source src={source} type="video/mp4" />
   </video>
 );
@@ -10,7 +10,7 @@ const Video = ({ source, className, poster }) => (
 
 Video.propTypes = {
   source: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
+  variant: PropTypes.string.isRequired,
   poster: PropTypes.string.isRequired,
 };
 

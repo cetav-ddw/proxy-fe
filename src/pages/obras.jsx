@@ -1,6 +1,8 @@
 import React from 'react';
 import SEO from '../components/seo';
-import Header from '../components/layouts/header';
+import MainLayout from '../components/layouts/MainLayout';
+import EventData from '../components/sections/eventDate/EventDate';
+import Nav from '../components/sections/nav/Nav';
 import '../scss/styles.scss';
 
 const titlePage = 'obras';
@@ -8,7 +10,24 @@ const titlePage = 'obras';
 const Obras = () => (
   <>
     <SEO title={titlePage} />
-    <Header pageName={titlePage} />
+    <MainLayout
+      head={
+        (
+          <>
+            <EventData />
+            <Nav />
+          </>
+        )
+      }
+
+      sections={
+        <p>waiting</p>
+      }
+
+      allies={
+        <p>waiting</p>
+      }
+    />
   </>
 );
 

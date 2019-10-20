@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import Video from '../../units/Video';
 import './herobanner.scss';
 
-const HeroBanner = ({ pathVideo }) => (
+const HeroBanner = ({ videoSrc }) => (
   <div className="herobanner">
-    <Video className="herobanner__video" poster="bg-footer-h.jpg" source={pathVideo} />
+    <Video variant="herobanner__video" poster="bg-footer-h.jpg" source={videoSrc} />
   </div>
 );
 
 HeroBanner.propTypes = {
-  pathVideo: PropTypes.string.isRequired,
+  videoSrc: PropTypes.string.isRequired,
 };
 
 export default HeroBanner;

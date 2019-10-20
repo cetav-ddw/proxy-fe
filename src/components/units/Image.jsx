@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Image = ({ source, alt, className }) => (
-  <img src={source} alt={alt} className={className} />
+const Image = ({ source, alt, variant }) => (
+  <img src={source} alt={alt} className={variant} />
 );
 
 Image.defaultProps = {
   alt: '',
-  className: '',
+  variant: '',
 };
 
 Image.propTypes = {
   alt: PropTypes.string,
-  className: PropTypes.string,
+  variant: PropTypes.string,
   source: PropTypes.string.isRequired,
 };
 

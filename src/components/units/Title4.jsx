@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Title4({ className, inner }) {
-  return <h4 className={className}>{inner}</h4>;
+function Title4({ variant, children }) {
+  return <h4 className={variant}>{children}</h4>;
 }
 
 Title4.defaultProps = {
-  className: '',
+  variant: '',
 };
 
 Title4.propTypes = {
-  className: PropTypes.string,
-  inner: PropTypes.string.isRequired,
+  variant: PropTypes.string,
+  children: PropTypes.node.isRequired,
 };
 
 export default Title4;

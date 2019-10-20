@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Paragraph = ({ inner, className }) => (
-  <p className={className}>{inner}</p>
+const Paragraph = ({ children, variant }) => (
+  <p className={variant}>{children}</p>
 );
 
 Paragraph.defaultProps = {
-  className: '',
+  variant: '',
 };
 
 Paragraph.propTypes = {
-  className: PropTypes.string,
-  inner: PropTypes.string.isRequired,
+  variant: PropTypes.string,
+  children: PropTypes.node.isRequired,
 };
 
 export default Paragraph;
