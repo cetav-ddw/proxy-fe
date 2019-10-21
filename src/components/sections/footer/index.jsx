@@ -21,11 +21,9 @@ const Footer = () => (
       <Image variant="allies__item" source="./footer/submarca-blanco2.png" alt="Cooperación Española" />
       <Image variant="allies__item" source="./footer/logo-Telerad-blanco.png" alt="Telerad Telecomunicaciones Radiodigitales" />
     </div>
-    <div>
-      <p className="copy-year">©2019</p>
-      <span className="copy-proxy__img">Proxy</span>
-      <p className="copy__contact"> | Contactenos</p>
-    </div>
+    <p className="copy-year">©2019</p>
+    <span className="copy-proxy__img">Proxy</span>
+    <p className="copy__contact"> | Contactenos</p>
     <div className="media">
       <a className="media_link" href="https://www.instagram.com/proxy_hiperreal/?hl=es-la">
         <Image variant="media__icon media__icon--mgl" source="./social/insta.svg" alt="Instagram de Proxy" />
