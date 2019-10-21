@@ -1,4 +1,4 @@
-import React from 'react';
+import React from './node_modules/react';
 import './allies.scss';
 import Image from '../../units/Image';
 

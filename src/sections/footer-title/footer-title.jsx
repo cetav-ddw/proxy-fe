@@ -1,4 +1,4 @@
-import React from 'react';
+import React from './node_modules/react';
 import './footer-title.scss';
 // import Title4 from '../../units/Title4';
 
