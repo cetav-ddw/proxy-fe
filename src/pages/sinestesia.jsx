@@ -1,12 +1,23 @@
 import React from 'react';
-import Layout from '../components/layout';
 import SEO from '../components/seo';
+import MainLayout from '../components/layouts/MainLayout';
+import '../scss/styles.scss';
+
+const titlePage = 'sinestesia';
 
 const Sinestesia = () => (
-  <Layout>
-    <SEO title="sinestesia" />
-    <h1>Sinestesia</h1>
-  </Layout>
+  <>
+    <SEO title={titlePage} />
+    <MainLayout
+      videoOpt="sinestesia.mp4"
+      mainContent={
+        <p>info de sinestesia component</p>
+      }
+      content={
+        <p>requisitos</p>
+      }
+    />
+  </>
 );
 
 export default Sinestesia;
