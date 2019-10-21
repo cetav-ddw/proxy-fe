@@ -1,11 +1,23 @@
 import React from 'react';
 import SEO from '../components/seo';
-import Footer from '../sections/Footer/footer';
+import MainLayout from '../components/layouts/MainLayout';
+import '../scss/styles.scss';
+import Footer from '../components/sections/footer/index';
+
+const titlePage = 'home';
 
 const IndexPage = () => (
   <>
-    <SEO title="Proxy" />
-    <h1>Proxy 2019</h1>
+    <SEO title={titlePage} />
+    <MainLayout
+      videoOpt="main.mp4"
+      mainContent={
+        <p>modalidades component</p>
+      }
+      content={
+        <p>works</p>
+      }
+    />
     <Footer />
   </>
 );
