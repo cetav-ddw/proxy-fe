@@ -1,12 +1,15 @@
 import React from 'react';
-import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Modalidades from '../components/sections/modalidades/Modalidades';
+// Load styles.
+import '../scss/styles.scss';
 
 const IndexPage = () => (
-  <Layout>
+  <div>
     <SEO title="proxy" />
     <h1>Proxy 2019</h1>
-  </Layout>
+    <Modalidades />
+  </div>
 );
 
 export default IndexPage;

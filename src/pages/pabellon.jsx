@@ -1,12 +1,11 @@
 import React from 'react';
-import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const Pabellon = () => (
-  <Layout>
+  <div>
     <SEO title="pabellon" />
     <h1>Pabellon</h1>
-  </Layout>
+  </div>
 );
 
 export default Pabellon;

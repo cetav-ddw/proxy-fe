@@ -1,12 +1,12 @@
 import React from 'react';
-import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+
 const Proxy = () => (
-  <Layout>
+  <div>
     <SEO title="proxyOrg" />
     <h1>Proxy Organizacion 2019</h1>
-  </Layout>
+  </div>
 );
 
 export default Proxy;

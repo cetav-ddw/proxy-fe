@@ -1,12 +1,11 @@
 import React from 'react';
-import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const Obras = () => (
-  <Layout>
+  <div>
     <SEO title="obras" />
     <h1>Obras</h1>
-  </Layout>
+  </div>
 );
 
 export default Obras;
