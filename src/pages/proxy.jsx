@@ -1,12 +1,13 @@
 import React from 'react';
-import Layout from '../components/layout';
 import SEO from '../components/seo';
+import WProxy from '../components/Proxy/proxy';
 
 const Proxy = () => (
-  <Layout>
+  <>
     <SEO title="proxyOrg" />
     <h1>Proxy Organizacion 2019</h1>
-  </Layout>
+    <WProxy />
+  </>
 );
 
 export default Proxy;
