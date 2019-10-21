@@ -1,11 +1,11 @@
 import React from 'react';
-import Title3 from '../../../units/Title3';
+import Title2 from '../../../units/Title2';
 import Sinestesia from './sinestesia/Sinestesia';
-import Pabellon from './Pabellon';
+import Pabellon from './pabellon/Pabellon';
 
 const Modalidades = () => (
-  <div>
-    <Title3>Modalidades</Title3>
+  <div className="modalities">
+    <Title2 inner="Modalidades" />
     <Sinestesia />
     <Pabellon />
   </div>
