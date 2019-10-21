@@ -4,7 +4,7 @@ import MainLayout from '../components/layouts/MainLayout';
 import '../scss/styles.scss';
 import Footer from '../components/sections/footer/index';
 
-const titlePage = 'pabellon';
+const titlePage = 'Pabellón';
 
 const Pabellon = () => (
   <>

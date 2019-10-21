@@ -4,7 +4,7 @@ import MainLayout from '../components/layouts/MainLayout';
 import Footer from '../components/sections/footer/index';
 import '../scss/styles.scss';
 
-const titlePage = 'proxy';
+const titlePage = 'Proxy';
 
 const Proxy = () => (
   <>
