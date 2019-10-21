@@ -13,12 +13,12 @@ const Header = ({ videoSrc }) => (
   </header>
 );
 
-Header.propTypes = {
-  videoSrc: false,
+Header.defaultProps = {
+  videoSrc: '',
 };
 
 Header.propTypes = {
-  videoSrc: PropTypes.string.isRequired,
+  videoSrc: PropTypes.string,
 };
 
 export default Header;

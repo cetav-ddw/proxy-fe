@@ -23,14 +23,14 @@ const MainLayout = (
   </>
 );
 
-Header.propTypes = {
-  videoOpt: false,
+MainLayout.defaultProps = {
+  videoOpt: '',
 };
 
 MainLayout.propTypes = {
   mainContent: PropTypes.node.isRequired,
   content: PropTypes.node.isRequired,
-  videoOpt: PropTypes.string.isRequired,
+  videoOpt: PropTypes.string,
 };
 
 
