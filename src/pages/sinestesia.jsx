@@ -1,6 +1,5 @@
 import React from 'react';
 import SEO from '../components/seo';
-import Header from '../components/sections/header/Header';
 import MainLayout from '../components/layouts/MainLayout';
 import '../scss/styles.scss';
 
@@ -10,16 +9,12 @@ const Sinestesia = () => (
   <>
     <SEO title={titlePage} />
     <MainLayout
-      head={
-        (
-          <>
-            <Header videoSrc="sinestesia.mp4" useVideo />
-          </>
-        )
+      videoOpt="sinestesia.mp4"
+      mainContent={
+        <p>info de sinestesia component</p>
       }
-
-      sections={
-        <p>waiting</p>
+      content={
+        <p>requisitos</p>
       }
     />
   </>

@@ -1,6 +1,5 @@
 import React from 'react';
 import SEO from '../components/seo';
-import Header from '../components/sections/header/Header';
 import MainLayout from '../components/layouts/MainLayout';
 import '../scss/styles.scss';
 
@@ -10,16 +9,12 @@ const IndexPage = () => (
   <>
     <SEO title={titlePage} />
     <MainLayout
-      head={
-        (
-          <>
-            <Header videoSrc="main.mp4" useVideo />
-          </>
-        )
+      videoOpt="main.mp4"
+      mainContent={
+        <p>modalidades component</p>
       }
-
-      sections={
-        <p>waiting</p>
+      content={
+        <p>works</p>
       }
     />
   </>

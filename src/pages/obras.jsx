@@ -1,7 +1,5 @@
 import React from 'react';
 import SEO from '../components/seo';
-import Header from '../components/sections/header/Header';
-import MainLayout from '../components/layouts/MainLayout';
 import '../scss/styles.scss';
 
 const titlePage = 'obras';
@@ -9,19 +7,7 @@ const titlePage = 'obras';
 const Obras = () => (
   <>
     <SEO title={titlePage} />
-    <MainLayout
-      head={
-        (
-          <>
-            <Header videoSrc="main.mp4" />
-          </>
-        )
-      }
-
-      sections={
-        <p>waiting</p>
-      }
-    />
+    hay que hacer otro layout para esta page porquees diferente the structure
   </>
 );
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import SEO from '../components/seo';
-import Header from '../components/sections/header/Header';
 import MainLayout from '../components/layouts/MainLayout';
 import '../scss/styles.scss';
 
@@ -10,16 +9,12 @@ const Pabellon = () => (
   <>
     <SEO title={titlePage} />
     <MainLayout
-      head={
-        (
-          <>
-            <Header videoSrc="pabellon.mp4" useVideo />
-          </>
-        )
+      videoOpt="pabellon.mp4"
+      mainContent={
+        <p>info de pabellon</p>
       }
-
-      sections={
-        <p>waiting</p>
+      content={
+        <p>fechas importantes y info component</p>
       }
     />
   </>
