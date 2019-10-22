@@ -1,10 +1,22 @@
 import React from 'react';
 import SEO from '../components/seo';
+import MainLayout from '../components/layouts/MainLayout';
+import '../scss/styles.scss';
+
+const titlePage = 'Pabellón';
 
 const Pabellon = () => (
   <>
-    <SEO title="pabellon" />
-    <h1>Pabellon</h1>
+    <SEO title={titlePage} />
+    <MainLayout
+      videoOpt="pabellon.mp4"
+      mainContent={
+        <p>info de pabellon</p>
+      }
+      content={
+        <p>fechas importantes y info component</p>
+      }
+    />
   </>
 );
 

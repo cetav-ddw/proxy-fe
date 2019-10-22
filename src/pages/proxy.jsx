@@ -1,12 +1,19 @@
 import React from 'react';
 import SEO from '../components/seo';
-import WProxy from '../components/Proxy/proxy';
+import MainLayout from '../components/layouts/MainLayout';
+import WProxy from '../components/Proxy';
+import '../scss/styles.scss';
+
+const titlePage = 'Proxy';
 
 const Proxy = () => (
   <>
-    <SEO title="proxyOrg" />
-    <h1>Proxy Organizacion 2019</h1>
-    <WProxy />
+    <SEO title={titlePage} />
+    <MainLayout
+      mainContent={
+        <WProxy />
+      }
+    />
   </>
 );
 
