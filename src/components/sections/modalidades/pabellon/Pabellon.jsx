@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-// import './styles.scss';
+import './pabellon.scss';
+import '../styles.scss';
 
 const Pabellon = () => (
   // eslint-disable-next-line no-trailing-spaces
@@ -10,8 +11,8 @@ const Pabellon = () => (
     </video>
     <div className="column-type__content">
       <h3 className="content-title column-type__title--right">Pabellón</h3>
-      <p className="column-type__text--right">Participa con una obra de nuevos medios relacionados con la hiperrealidad</p>
-      <Link to="../../../../pages/pabellon.jsx" className=".column-type__details--right glitch">Más detalles</Link>
+      <p className="column-type__text--right content-text">Participa con una obra de nuevos medios relacionados con la hiperrealidad</p>
+      <Link to="../../../../pages/pabellon.jsx" className="column-type__details--right glitch">Más detalles</Link>
     </div>
   </div>
 );

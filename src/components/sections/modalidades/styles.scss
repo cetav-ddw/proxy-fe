@@ -69,33 +69,6 @@
   }
 }
 
-.column-type__title--right {
-
-  &::before {
-    @media ( min-width: $breakpoint-md) {
-      right: 0;
-      text-align: right;
-    }
-  }
-}
-
-.column-type__text--right {
-  left: 0;
-  text-align: left;
-
-  @media ( min-width: $breakpoint-md) {
-    right: 0;
-    text-align: right;
-  }
-}
-
-.column-type__details--right {
-  @media ( min-width: $breakpoint-md) {
-    text-align: right;
-  }
-}
-
-
 .glitch {
   color: $white;
   display: block;
