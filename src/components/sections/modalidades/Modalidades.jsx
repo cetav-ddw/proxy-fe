@@ -1,7 +1,8 @@
 import React from 'react';
-import Title2 from '../../../units/Title2';
+import Title2 from '../../units/Title2';
 import Sinestesia from './sinestesia/Sinestesia';
 import Pabellon from './pabellon/Pabellon';
+import './styles.scss';
 
 const Modalidades = () => (
   <div className="modalities">
