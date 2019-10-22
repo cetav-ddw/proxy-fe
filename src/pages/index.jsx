@@ -1,15 +1,23 @@
 import React from 'react';
 import SEO from '../components/seo';
-import Modalidades from '../components/sections/modalidades/Modalidades';
-// Load styles.
+import MainLayout from '../components/layouts/MainLayout';
 import '../scss/styles.scss';
 
+const titlePage = 'home';
+
 const IndexPage = () => (
-  <div>
-    <SEO title="proxy" />
-    <h1>Proxy 2019</h1>
-    <Modalidades />
-  </div>
+  <>
+    <SEO title={titlePage} />
+    <MainLayout
+      videoOpt="main.mp4"
+      mainContent={
+        <p>modalidades component</p>
+      }
+      content={
+        <p>works</p>
+      }
+    />
+  </>
 );
 
 export default IndexPage;
