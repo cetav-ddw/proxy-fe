@@ -3,7 +3,7 @@ import SEO from '../components/seo';
 import MainLayout from '../components/layouts/MainLayout';
 import '../scss/styles.scss';
 
-const titlePage = 'sinestesia';
+const titlePage = 'Sinestesia';
 
 const Sinestesia = () => (
   <>
