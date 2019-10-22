@@ -1,7 +1,6 @@
 import React from 'react';
 import SEO from '../components/seo';
 import MainLayout from '../components/layouts/MainLayout';
-import Footer from '../components/sections/footer/index';
 import '../scss/styles.scss';
 
 const titlePage = 'Sinestesia';
@@ -18,7 +17,6 @@ const Sinestesia = () => (
         <p>requisitos</p>
       }
     />
-    <Footer />
   </>
 );
 

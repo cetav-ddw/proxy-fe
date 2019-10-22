@@ -13,6 +13,10 @@
   @media (min-width: $breakpoint-lg) {
     margin: 1% 5% 1% 5%;
   }
+
+  @media (min-width: $breakpoint-xl) {
+    max-width: 1200px;
+  }
 }
 
 .allies__item {

@@ -2,7 +2,6 @@ import React from 'react';
 import SEO from '../components/seo';
 import MainLayout from '../components/layouts/MainLayout';
 import '../scss/styles.scss';
-import Footer from '../components/sections/footer/index';
 
 const titlePage = 'Inicio';
 
@@ -18,7 +17,6 @@ const IndexPage = () => (
         <p>works</p>
       }
     />
-    <Footer />
   </>
 );
 

@@ -2,7 +2,6 @@ import React from 'react';
 import SEO from '../components/seo';
 import MainLayout from '../components/layouts/MainLayout';
 import '../scss/styles.scss';
-import Footer from '../components/sections/footer/index';
 
 const titlePage = 'Pabellón';
 
@@ -18,7 +17,6 @@ const Pabellon = () => (
         <p>fechas importantes y info component</p>
       }
     />
-    <Footer />
   </>
 );
 
