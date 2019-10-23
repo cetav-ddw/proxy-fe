@@ -1,10 +1,10 @@
 import React from 'react';
 import SEO from '../components/seo';
 import MainLayout from '../components/layouts/MainLayout';
-import SocialMedia from '../components/sections/social-media/index';
+import Modalidades from '../components/sections/modalidades/Modalidades';
 import '../scss/styles.scss';
 
-const titlePage = 'home';
+const titlePage = 'Inicio';
 
 const IndexPage = () => (
   <>
@@ -12,12 +12,13 @@ const IndexPage = () => (
     <MainLayout
       videoOpt="main.mp4"
       mainContent={
-        <SocialMedia />
+        <Modalidades />
       }
       content={
         <p>works</p>
       }
     />
+
   </>
 );
 

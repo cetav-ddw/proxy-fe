@@ -4,7 +4,7 @@ import MainLayout from '../components/layouts/MainLayout';
 import SocialMedia from '../components/sections/social-media/index';
 import '../scss/styles.scss';
 
-const titlePage = 'sinestesia';
+const titlePage = 'Sinestesia';
 
 const Sinestesia = () => (
   <>
