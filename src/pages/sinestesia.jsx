@@ -1,7 +1,6 @@
 import React from 'react';
 import SEO from '../components/seo';
 import MainLayout from '../components/layouts/MainLayout';
-import SocialMedia from '../components/sections/social-media/index';
 import '../scss/styles.scss';
 
 const titlePage = 'Sinestesia';
@@ -12,7 +11,7 @@ const Sinestesia = () => (
     <MainLayout
       videoOpt="sinestesia.mp4"
       mainContent={
-        <SocialMedia />
+        <p>Contenido</p>
       }
       content={
         <p>requisitos</p>
