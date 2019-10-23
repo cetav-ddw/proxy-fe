@@ -3,35 +3,13 @@
 
 .wrapper-social{
   margin: 0 auto;
-  width: 50%;
   padding: 30px 0;
+  width: 50%;
 }
 
 .wrapper-social__block-icons {
   display: flex;
   justify-content: center;
-}
-
-.insta {
-  background: url('../../../../static/insta-verde.svg');
-  height: 27px;
-  width: 26px;
-
-  @media ( min-width: $breakpoint-md) {
-    height: 43px;
-    width: 43px;
-  }
-}
-
-.face {
-  background:url('../../../../static/face-verde.svg');
-  height: 29px;
-  width: 23px;
-
-  @media ( min-width: $breakpoint-md) {
-    height: 40px;
-    width: 40px;
-  }
 }
 
 .wrapper-social__icon {
@@ -44,12 +22,34 @@
   font-family: $title;
   font-size: $txt-small;
   font-weight: bold;
-  margin: 0;
-  text-transform: uppercase;
-  text-align: center;
+  margin: 0; 
   position: relative;
-
-  @media ( min-width: $breakpoint-md) {
+  text-align: center;
+  text-transform: uppercase;
+ 
+  @media (min-width: $breakpoint-md) {
     font-size: $txt-medium;
+  }
+}
+
+.face {
+  background:url('../../../../static/face-verde.svg');
+  height: 29px;
+  width: 23px;
+
+  @media (min-width: $breakpoint-md) {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.insta {
+  background: url('../../../../static/insta-verde.svg');
+  height: 27px;
+  width: 26px;
+
+  @media (min-width: $breakpoint-md) {
+    height: 43px;
+    width: 43px;
   }
 }
