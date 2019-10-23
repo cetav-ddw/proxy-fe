@@ -35,7 +35,7 @@ const Proxy = () => (
           <section className="wrapper-org">
             <h2 className="title-org">Organización</h2>
             <p className="org__text">Somos un colectivo de artistas y entusiastas de la cultura digital, interesadxs en generar espacios y situaciones de experimentación en torno al arte de los nuevos medios.</p>
-            <div variant="content-img">
+            <div className="content-img">
               <Image
                 variant="img-org"
                 source="./secciones/org.jpeg"
