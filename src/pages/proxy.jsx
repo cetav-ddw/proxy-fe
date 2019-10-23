@@ -3,7 +3,7 @@ import SEO from '../components/seo';
 import MainLayout from '../components/layouts/MainLayout';
 import '../scss/styles.scss';
 
-const titlePage = 'proxy';
+const titlePage = 'Proxy';
 
 
 const Proxy = () => (
