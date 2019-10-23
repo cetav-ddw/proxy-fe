@@ -1,0 +1,63 @@
+@import './styles.scss';
+
+.desc-pabellon {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px 30px;
+  @media (min-width: $breakpoint-xl) {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+.desc-requi {
+  padding: 5px 15px 60px;
+
+  @media (min-width: $breakpoint-lg) {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+.pabellon__img {
+  background: transparent url('../images/pabellon.png') no-repeat;
+  display: inline-block;
+  height: 457px;
+  margin: 0;
+  overflow: hidden;
+  text-indent: 100%;
+  width: 620px;
+  white-space: nowrap;
+ 
+  @media (min-width:$breakpoint-md) {
+    margin: 0 auto;
+  }
+}
+
+.desc-pabellon__subtitle {
+  font-size: 1.5rem;
+}
+
+.requi{
+  @media (min-width: $breakpoint-xl) {
+    padding-left: 10%;
+    width: 75%;
+  }
+}
+
+.requi__list {
+  list-style: decimal-leading-zero;
+}
+
+.requi__list-item {
+  margin: 0 auto; 
+  padding: 10px;
+
+  @media (min-width: $breakpoint-md) {
+    width: 85%;
+  }
+}
+
+.requi__title {
+  text-align: center;
+}
