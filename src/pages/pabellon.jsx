@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from '../components/seo';
 import MainLayout from '../components/layouts/MainLayout';
+import SocialMedia from '../components/sections/social-media/index';
 import '../scss/styles.scss';
 
 const titlePage = 'pabellon';
@@ -11,7 +12,7 @@ const Pabellon = () => (
     <MainLayout
       videoOpt="pabellon.mp4"
       mainContent={
-        <p>info de pabellon</p>
+        <SocialMedia />
       }
       content={
         <p>fechas importantes y info component</p>
