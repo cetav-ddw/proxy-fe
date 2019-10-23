@@ -1,0 +1,65 @@
+@import '../scss/styles.scss';
+
+.content-img {
+  text-align: center;
+  width: 100%;
+
+  @media (min-width: $breakpoint-xl) {
+    margin: 0 auto;    
+    max-width: 1200px; 
+  }
+}
+
+.desc-proxy {
+  padding: 20px 15px 30px;
+
+  @media (min-width: $breakpoint-md) {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    max-width: 1200px;
+    padding-left: 0;
+  }
+}
+
+.img-org {
+  width: 100%;
+
+  @media (min-width: $breakpoint-md) {
+    margin: 0 auto;
+    width: 80%;
+    
+  }
+}
+
+.img-proxy {
+  background: transparent url("../images/proxy.svg") no-repeat;
+  margin: 0; 
+  overflow: hidden;
+  text-indent: 100%;
+  width: 28%;
+  white-space: nowrap;
+
+  @media (min-width: $breakpoint-md) {
+    width: 19%;
+  }
+}
+
+.title-org {
+  text-align: center;
+}
+
+.wrapper-org {
+  padding: 5px 15px 60px;
+
+  @media (min-width:$breakpoint-md) {
+    margin: 0 auto;
+    width: 80%;
+  }
+  @media (min-width: $breakpoint-xl) {
+    max-width: 1200px;  
+  }
+
+}
