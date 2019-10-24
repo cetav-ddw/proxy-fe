@@ -1,17 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import SEO from '../components/seo';
 import MainLayout from '../components/layouts/MainLayout';
 import Modalidades from '../components/sections/modalidades';
-import Work from '../components/sections/work';
+import Work from '../components/sections/workUnits';
 import '../scss/styles.scss';
 
 const titlePage = 'Inicio';
 
-const IndexPage = ({ data }) => {
-  // usar hooks para que la data sea se
-  console.log(data.allDatoCmsObra.edges);
+const IndexPage = ({ data: { allDatoCmsObra } }) => {
+  IndexPage.defaultProps = { data: null };
+  IndexPage.propTypes = { data: PropTypes.objectOf };
+
+  const [works, setWorks] = useState(null);
+  const [resived, setResived] = useState(false);
+
+  useEffect(() => {
+    setWorks(allDatoCmsObra.edges);
+    setResived(true);
+  }, [works]);
+
   return (
     <>
       <SEO title={titlePage} />
@@ -19,19 +28,11 @@ const IndexPage = ({ data }) => {
         videoOpt="home-videos/main.mp4"
         mainContent={<Modalidades />}
         content={
-          (
-            <Work
-              allWorks={data.allDatoCmsObra.edges}
-            />
-          )
+          resived && <Work allWorks={works} />
         }
       />
     </>
   );
-};
-
-IndexPage.propTypes = {
-  data: PropTypes.objectOf.isRequired,
 };
 
 export default IndexPage;
@@ -50,7 +51,6 @@ export const query = graphql`
             year
             images {
               url
-              alt
             }
             firstName
             secondName
