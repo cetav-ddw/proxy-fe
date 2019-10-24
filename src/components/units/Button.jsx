@@ -2,11 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // un btn siempre ejecuta un evento
 const Button = ({ children, variant, handleClickbtn }) => (
-  <button
-    onClick={handleClickbtn}
-    type="button"
-    className={variant}
-  >
+  <button onClick={handleClickbtn} type="button" className={variant}>
     {children}
   </button>
 );

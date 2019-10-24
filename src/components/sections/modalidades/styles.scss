@@ -39,6 +39,10 @@
   }
 }
 
+.column-type__text--right {
+  text-align: right;
+}
+
 .column-type__video {
   max-width: 100%;
   order: 1;
@@ -69,6 +73,14 @@
   }
 }
 
+.column-type__title--right {
+  text-align: right;
+
+  &::before {
+    right: 0;
+  }
+}
+
 .glitch {
   color: $white;
   display: block;
@@ -76,7 +88,7 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   position: relative;
- 
+
   @media ( min-width: $breakpoint-lg) {
     font-size: $txt-medium;
   }
@@ -108,4 +120,8 @@
       text-shadow: -1px 1px  1px $turquoise;
     }
   }
+}
+
+.column-type__details--right {
+  text-align: right;
 }

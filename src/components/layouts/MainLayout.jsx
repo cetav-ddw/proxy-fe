@@ -5,22 +5,12 @@ import Footer from '../sections/footer';
 
 // aquí estará el componente de Footer (se usa en todos los pages)
 
-const MainLayout = (
-  {
-    mainContent, content, videoOpt,
-  },
-) => (
+const MainLayout = ({ mainContent, content, videoOpt }) => (
   <>
     <Header videoSrc={videoOpt} />
-    <div>
-      redes aqui va ir el componente de redes sociales
-    </div>
-    <div>
-      {mainContent}
-    </div>
-    <div>
-      {content}
-    </div>
+    <div>redes aqui va ir el componente de redes sociales</div>
+    <div>{mainContent}</div>
+    <div>{content}</div>
     <Footer />
   </>
 );
@@ -34,6 +24,5 @@ MainLayout.propTypes = {
   content: PropTypes.node.isRequired,
   videoOpt: PropTypes.string,
 };
-
 
 export default MainLayout;

@@ -10,12 +10,8 @@ const Pabellon = () => (
     <SEO title={titlePage} />
     <MainLayout
       videoOpt="pabellon.mp4"
-      mainContent={
-        <p>info de pabellon</p>
-      }
-      content={
-        <p>fechas importantes y info component</p>
-      }
+      mainContent={<p>info de pabellon</p>}
+      content={<p>fechas importantes y info component</p>}
     />
   </>
 );
