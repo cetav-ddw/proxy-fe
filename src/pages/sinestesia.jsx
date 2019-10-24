@@ -15,9 +15,12 @@ const Sinestesia = () => (
         <SinestesiaD />
       // <p>info de sinestesia component</p>
       }
-      content={
-        <p>requisitos</p>
-      }
+      content={(
+        <div className="sinestesia-dates">
+          <h2 className="sinestesia-dates__title">Fechas Importantes</h2>
+          <p>requisitos</p>
+        </div>
+      )}
     />
   </>
 );
