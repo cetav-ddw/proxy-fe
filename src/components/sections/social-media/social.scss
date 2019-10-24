@@ -1,5 +1,26 @@
 @import '../../../scss/settings/vars.scss';
 
+.face {
+  background:url('../../../../static/face-verde.svg');
+  height: 29px;
+  width: 23px;
+
+  @media (min-width: $breakpoint-md) {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.insta {
+  background: url('../../../../static/insta-verde.svg');
+  height: 27px;
+  width: 26px;
+
+  @media (min-width: $breakpoint-md) {
+    height: 43px;
+    width: 43px;
+  }
+}
 
 .wrapper-social{
   margin: 0 auto;
@@ -32,24 +53,3 @@
   }
 }
 
-.face {
-  background:url('../../../../static/face-verde.svg');
-  height: 29px;
-  width: 23px;
-
-  @media (min-width: $breakpoint-md) {
-    height: 40px;
-    width: 40px;
-  }
-}
-
-.insta {
-  background: url('../../../../static/insta-verde.svg');
-  height: 27px;
-  width: 26px;
-
-  @media (min-width: $breakpoint-md) {
-    height: 43px;
-    width: 43px;
-  }
-}
