@@ -52,21 +52,21 @@ const Proxy = () => (
                 el sustituto, la fantasía de lo hiperreal,
                 ligadas a la influencia de las tecnologías emergentes a nuestra cultura.
               </p>
-            </div>
-          </section>
-          <section className="wrapper-org">
-            <h2 className="title-org">Organización</h2>
-            <p className="org__text">Somos un colectivo de artistas y entusiastas de la cultura digital, interesadxs en generar espacios y situaciones de experimentación en torno al arte de los nuevos medios.</p>
-            <div className="content-img">
-              <Image
-                variant="img-org"
-                source="./secciones/org.jpeg"
-                alt="En la imagen salen los organizadores del evento Prizcila Mendez y Randall Sáenz"
-              />
-            </div>
-          </section>
-        </div>
-      )}
+            </section>
+            <section className="wrapper-org">
+              <h2 className="title-org">Organización</h2>
+              <p className="org__text">Somos un colectivo de artistas y entusiastas de la cultura digital, interesadxs en generar espacios y situaciones de experimentación en torno al arte de los nuevos medios.</p>
+              <div className="content-img">
+                <Image
+                  variant="img-org"
+                  source="./secciones/org.jpeg"
+                  alt="En la imagen salen los organizadores del evento Prizcila Mendez y Randall Sáenz"
+                />
+              </div>
+            </section>
+          </div>
+      )
+}
     />
   </>
 );

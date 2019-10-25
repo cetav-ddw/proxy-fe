@@ -1,8 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Header from "../sections/header"
+import React from 'react';
+import PropTypes from 'prop-types';
+import Header from '../sections/header';
 import SocialMedia from '../sections/social-media';
-import Footer from "../sections/footer"
+import Footer from '../sections/footer';
 
 const MainLayout = ({ mainContent, content, videoOpt }) => (
   <>
@@ -16,16 +16,16 @@ const MainLayout = ({ mainContent, content, videoOpt }) => (
     </div>
     <Footer />
   </>
-)
+);
 
 MainLayout.defaultProps = {
-  videoOpt: "",
-}
+  videoOpt: '',
+};
 
 MainLayout.propTypes = {
   mainContent: PropTypes.node.isRequired,
   content: PropTypes.node.isRequired,
   videoOpt: PropTypes.string,
-}
+};
 
-export default MainLayout
+export default MainLayout;
