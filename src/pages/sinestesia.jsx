@@ -10,12 +10,8 @@ const Sinestesia = () => (
     <SEO title={titlePage} />
     <MainLayout
       videoOpt="sinestesia.mp4"
-      mainContent={
-        <p>Contenido</p>
-      }
-      content={
-        <p>requisitos</p>
-      }
+      mainContent={<p>Contenido</p>}
+      content={<p>requisitos</p>}
     />
   </>
 );
