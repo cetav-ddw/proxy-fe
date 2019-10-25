@@ -6,12 +6,12 @@ function Title4({ variant, children }) {
 }
 
 Title4.defaultProps = {
-  variant: '',
+  variant: ''
 };
 
 Title4.propTypes = {
   variant: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default Title4;

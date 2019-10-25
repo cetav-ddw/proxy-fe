@@ -7,13 +7,13 @@ const Image = ({ source, alt, variant }) => (
 
 Image.defaultProps = {
   alt: '',
-  variant: '',
+  variant: ''
 };
 
 Image.propTypes = {
   alt: PropTypes.string,
   variant: PropTypes.string,
-  source: PropTypes.string.isRequired,
+  source: PropTypes.string.isRequired
 };
 
 export default Image;

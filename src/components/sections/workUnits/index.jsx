@@ -1,14 +1,14 @@
-import React from "react"
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import Image from "../../units/Image"
-import "./workUnit.scss"
+import React from 'react';
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import Image from '../../units/Image';
+import './workUnit.scss';
 
 const Work = ({ allWorks }) => {
-  let modific = ""
+  let modific = '';
   const structure = allWorks.map((node, index) => {
-    const workItem = node.node
-    if (index === 1) modific = "--right"
+    const workItem = node.node;
+    if (index === 1) modific = '--right';
 
     return (
       <div className="works__content-work" key={workItem.id}>
@@ -34,19 +34,19 @@ const Work = ({ allWorks }) => {
           </Link>
         </div>
       </div>
-    )
-  })
+    );
+  });
 
   return (
     <section className="works">
       <h2>Obras</h2>
       {structure}
     </section>
-  )
-}
+  );
+};
 
 Work.propTypes = {
-  allWorks: PropTypes.arrayOf(PropTypes.object).isRequired,
-}
+  allWorks: PropTypes.arrayOf(PropTypes.object).isRequired
+};
 
-export default Work
+export default Work;

@@ -10,7 +10,7 @@ const Button = ({ children, variant, handleClickbtn }) => (
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   variant: PropTypes.string.isRequired,
-  handleClickbtn: PropTypes.func.isRequired,
+  handleClickbtn: PropTypes.func.isRequired
 };
 
 export default Button;
