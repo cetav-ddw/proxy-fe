@@ -1,14 +1,19 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Header from "../sections/header"
+import SocialMedia from '../sections/social-media';
 import Footer from "../sections/footer"
 
 const MainLayout = ({ mainContent, content, videoOpt }) => (
   <>
     <Header videoSrc={videoOpt} />
-    <div>redes aqui va ir el componente de redes sociales</div>
-    <div>{mainContent}</div>
-    <div>{content}</div>
+    <SocialMedia />
+    <div>
+      {mainContent}
+    </div>
+    <div>
+      {content}
+    </div>
     <Footer />
   </>
 )
