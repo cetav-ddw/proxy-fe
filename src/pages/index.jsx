@@ -42,8 +42,7 @@ export const query = graphql`
           images {
             url
           }
-          firstName
-          secondName
+          title
         }
       }
     }
