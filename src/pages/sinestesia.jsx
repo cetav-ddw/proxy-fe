@@ -11,7 +11,7 @@ const Sinestesia = () => (
     <MainLayout
       videoOpt="sinestesia.mp4"
       mainContent={
-        <p>info de sinestesia component</p>
+        <p>Contenido</p>
       }
       content={
         <p>requisitos</p>

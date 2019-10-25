@@ -7,6 +7,7 @@ import '../scss/proxy.scss';
 
 const titlePage = 'Proxy';
 
+
 const Proxy = () => (
   <>
     <SEO title={titlePage} />
@@ -45,7 +46,6 @@ const Proxy = () => (
           </section>
         </div>
       )}
-
     />
   </>
 );
