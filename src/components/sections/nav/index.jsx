@@ -7,7 +7,7 @@ class Nav extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      toggle: false,
+      toggle: false
     };
     this.handleClick = this.handleClick.bind(this);
   }
