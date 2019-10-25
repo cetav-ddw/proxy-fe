@@ -13,4 +13,5 @@ Title1.propTypes = {
   variant: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
+
 export default Title1;

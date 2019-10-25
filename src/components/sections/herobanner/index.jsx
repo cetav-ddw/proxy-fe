@@ -5,7 +5,11 @@ import './herobanner.scss';
 
 const HeroBanner = ({ videoSrc }) => (
   <div className="herobanner">
-    <Video variant="herobanner__video" poster="bg-footer-h.jpg" source={videoSrc} />
+    <Video
+      variant="herobanner__video"
+      poster="bg-footer-h.jpg"
+      source={videoSrc}
+    />
   </div>
 );
 
