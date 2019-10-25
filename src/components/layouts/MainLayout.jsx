@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Header from '../sections/header';
+import SocialMedia from '../sections/social-media';
 import Footer from '../sections/footer';
 
 // aquí estará el componente de Footer (se usa en todos los pages)
@@ -12,9 +13,7 @@ const MainLayout = (
 ) => (
   <>
     <Header videoSrc={videoOpt} />
-    <div>
-      redes aqui va ir el componente de redes sociales
-    </div>
+    <SocialMedia />
     <div>
       {mainContent}
     </div>

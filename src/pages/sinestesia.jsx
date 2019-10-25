@@ -18,7 +18,6 @@ const Sinestesia = () => (
       }
       content={(
         <div className="sinestesia-dates">
-          <h2 className="sinestesia-dates__title">Fechas Importantes</h2>
           <p>Pronto más información</p>
           <h3 className="note__title">Nota</h3>
           <div className="wrapper__txt--columns">
