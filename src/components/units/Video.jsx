@@ -10,7 +10,7 @@ const Video = ({ source, variant, poster }) => (
 Video.propTypes = {
   source: PropTypes.string.isRequired,
   variant: PropTypes.string.isRequired,
-  poster: PropTypes.string.isRequired,
+  poster: PropTypes.string.isRequired
 };
 
 export default Video;

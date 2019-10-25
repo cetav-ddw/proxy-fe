@@ -1,10 +1,10 @@
-require("dotenv").config();
+require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
     title: 'Proxy',
     description: 'Proxy 2019',
-    author: '@Proxy',
+    author: '@Proxy'
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -13,8 +13,8 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
@@ -27,27 +27,14 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/proxy.png',
-      },
+        icon: 'src/images/proxy.png'
+      }
     },
     {
       resolve: 'gatsby-source-datocms',
       options: {
-        apiToken: process.env.DATO_API_TOKEN,
-      },
-    },
-    'gatsby-plugin-eslint',
-    {
-      resolve: 'gatsby-plugin-eslint',
-      options: {
-        test: /\.jsx$/,
-        exclude: /(node_modules|.cache|public)/,
-        stages: ['develop'],
-        options: {
-          emitWarning: true,
-          failOnError: false,
-        },
-      },
-    },
-  ],
-}
+        apiToken: process.env.DATO_API_TOKEN
+      }
+    }
+  ]
+};

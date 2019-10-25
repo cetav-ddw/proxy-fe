@@ -12,7 +12,7 @@ const titlePage = 'Inicio';
 const IndexPage = ({ data }) => {
   IndexPage.defaultProps = { data: [] };
   IndexPage.propTypes = {
-    data: PropTypes.arrayOf(PropTypes.object),
+    data: PropTypes.arrayOf(PropTypes.object)
   };
 
   return (
@@ -26,7 +26,6 @@ const IndexPage = ({ data }) => {
     </>
   );
 };
-
 
 export const query = graphql`
   {
@@ -43,8 +42,7 @@ export const query = graphql`
           images {
             url
           }
-          firstName
-          secondName
+          title
         }
       }
     }

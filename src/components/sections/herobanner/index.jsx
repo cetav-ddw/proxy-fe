@@ -14,7 +14,7 @@ const HeroBanner = ({ videoSrc }) => (
 );
 
 HeroBanner.propTypes = {
-  videoSrc: PropTypes.string.isRequired,
+  videoSrc: PropTypes.string.isRequired
 };
 
 export default HeroBanner;

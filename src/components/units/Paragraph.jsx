@@ -6,12 +6,12 @@ const Paragraph = ({ children, variant }) => (
 );
 
 Paragraph.defaultProps = {
-  variant: '',
+  variant: ''
 };
 
 Paragraph.propTypes = {
   variant: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default Paragraph;

@@ -8,24 +8,20 @@ const MainLayout = ({ mainContent, content, videoOpt }) => (
   <>
     <Header videoSrc={videoOpt} />
     <SocialMedia />
-    <div>
-      {mainContent}
-    </div>
-    <div>
-      {content}
-    </div>
+    <div>{mainContent}</div>
+    <div>{content}</div>
     <Footer />
   </>
 );
 
 MainLayout.defaultProps = {
-  videoOpt: '',
+  videoOpt: ''
 };
 
 MainLayout.propTypes = {
   mainContent: PropTypes.node.isRequired,
   content: PropTypes.node.isRequired,
-  videoOpt: PropTypes.string,
+  videoOpt: PropTypes.string
 };
 
 export default MainLayout;

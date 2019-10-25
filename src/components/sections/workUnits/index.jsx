@@ -18,12 +18,7 @@ const Work = ({ allWorks }) => {
             source={workItem.images[0].url}
             alt=""
           />
-          <h4 className={`wrapper-image__name${modific}`}>
-            {workItem.firstName}
-          </h4>
-          <h4 className={`wrapper-image__name${modific} lastname`}>
-            {workItem.secondName}
-          </h4>
+          <h4 className={`wrapper-image__name${modific}`}>{workItem.title}</h4>
         </div>
         <div className={`wrapper-text wrapper-text${modific}`}>
           <p className={`wrapper-text__paragraph${modific}`}>
@@ -46,7 +41,7 @@ const Work = ({ allWorks }) => {
 };
 
 Work.propTypes = {
-  allWorks: PropTypes.arrayOf(PropTypes.object).isRequired,
+  allWorks: PropTypes.arrayOf(PropTypes.object).isRequired
 };
 
 export default Work;
