@@ -7,7 +7,6 @@ const Video = ({ source, variant, poster }) => (
   </video>
 );
 
-
 Video.propTypes = {
   source: PropTypes.string.isRequired,
   variant: PropTypes.string.isRequired,

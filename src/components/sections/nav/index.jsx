@@ -22,34 +22,42 @@ class Nav extends Component {
     return (
       <>
         <Button handleClickbtn={this.handleClick} variant="btn-nav" id="open">
-          <span className="btn-nav__text">
-            {
-              toggle ? 'Cerrar' : 'Menú'
-            }
-          </span>
+          <span className="btn-nav__text">{toggle ? 'Cerrar' : 'Menú'}</span>
           <span className="circle-animation">
             <svg className="btn-nav__svg " height="60" width="60">
-              <circle className="progress-inner" cx="35" cy="35" r="13" strokeWidth="4" fill="none" stroke="#16E024" />
+              <circle
+                className="progress-inner"
+                cx="35"
+                cy="35"
+                r="13"
+                strokeWidth="4"
+                fill="none"
+                stroke="#16E024"
+              />
             </svg>
           </span>
         </Button>
-        <div
-          className={
-            toggle ? 'nav-open' : 'wrapper-nav'
-          }
-        >
+        <div className={toggle ? 'nav-open' : 'wrapper-nav'}>
           <ul className="nav-list">
             <li className="nav-list__item">
-              <Link to="/" className="nav-list__link">Inicio</Link>
+              <Link to="/" className="nav-list__link">
+                Inicio
+              </Link>
             </li>
             <li className="nav-list__item">
-              <Link to="/proxy" className="nav-list__link">Proxy</Link>
+              <Link to="/proxy" className="nav-list__link">
+                Proxy
+              </Link>
             </li>
             <li className="nav-list__item">
-              <Link to="/sinestesia" className="nav-list__link">Sinestesia</Link>
+              <Link to="/sinestesia" className="nav-list__link">
+                Sinestesia
+              </Link>
             </li>
             <li className="nav-list__item">
-              <Link to="/pabellon" className="nav-list__link">Pabellón</Link>
+              <Link to="/pabellon" className="nav-list__link">
+                Pabellón
+              </Link>
             </li>
           </ul>
         </div>
