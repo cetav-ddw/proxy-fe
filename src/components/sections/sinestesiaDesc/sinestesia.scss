@@ -1,17 +1,9 @@
 @import '../../../scss/settings/vars.scss';
 
-.wrapper-video {
-  width: 100%;
-}
-
-.video-sinestesia {
-  height: auto;
-  width: 100%;
-}
-
 .des-sinestesia {
   display: flex;
   justify-content: space-between;
+  max-width: 1200px;
   
   @media (min-width:$breakpoint-md) {
     padding: 0;
@@ -19,7 +11,6 @@
   }
   @media (min-width: $breakpoint-xl) {
     margin: 0 auto;    
-    max-width: 1200px;
     text-align: center;
     width: 55%;  
   }
@@ -39,14 +30,23 @@
   width: 75px;
 
   @media (min-width:$breakpoint-md) {
-    display: inline-block;
     margin: 0 auto;
   }
 }
 
+.video-sinestesia {
+  height: auto;
+  width: 100%;
+}
+
 .wrapper__des {
   width: 75%;
+
   @media (min-width: $breakpoint-xl) {
     width: 70%;
   }
+}
+
+.wrapper-video {
+  width: 100%;
 }
