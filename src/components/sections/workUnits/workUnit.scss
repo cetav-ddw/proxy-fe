@@ -67,10 +67,9 @@
     object-fit: cover;
   }
 
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: $breakpoint-lg) {
     width: 300px;
     height: 400px;
-    object-fit: cover;
   }
   
 }
@@ -84,7 +83,7 @@
     font-weight: bold;
     margin: 0;
     position: absolute;
-    right: -95%;
+    left: 250px;
     text-align: left;
     top: 0;
     width: 300px;
@@ -92,7 +91,6 @@
 
   @media (min-width: $breakpoint-lg) {
     font-size: 3.5rem;
-    right: -75%;
 	}
 }
 
@@ -103,7 +101,7 @@
   @media (min-width: $breakpoint-md) {
     font-size: 3rem;
     font-weight: bold;
-    left: -95%;
+    right: 285px;
     position: absolute;
     text-align: right;
     top: 0;
@@ -112,7 +110,6 @@
 
   @media (min-width: $breakpoint-lg) {
     font-size: 3.5rem;
-    left: -75%;
 	}
 }
 
