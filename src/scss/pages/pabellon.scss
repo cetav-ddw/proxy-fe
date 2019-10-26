@@ -1,4 +1,4 @@
-@import './styles.scss';
+@import "../styles.scss";
 
 .desc-pabellon {
   display: flex;
@@ -20,7 +20,7 @@
 }
 
 .pabellon__img {
-  background: transparent url('../images/pabellon.png') no-repeat;
+  background: transparent url('../../images/pabellon.png') no-repeat;
   display: inline-block;
   height: 457px;
   margin: 0;

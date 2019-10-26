@@ -1,20 +1,20 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import './social.scss';
 
+import './social.scss';
+// Hay que ponerle texto a los anchors
 const SocialMedia = () => (
   <div className="wrapper-social">
     <div className="wrapper-social__block-icons">
-      <Link
+      <a
         className="wrapper-social__icon insta"
-        to="https://www.instagram.com/proxy_hiperreal/?hl=es-la"
-      />
-      <Link
+        href="https://www.instagram.com/proxy_hiperreal/?hl=es-la"
+      ></a>
+      <a
         className="wrapper-social__icon face"
-        to="https://www.facebook.com/proxy.hiperreal/"
-      />
+        href="https://www.facebook.com/proxy.hiperreal/"
+      ></a>
     </div>
-    <p className="wrapper-social__title">síguenos</p>
+    <p className="wrapper-social__title">Síguenos</p>
   </div>
 );
 

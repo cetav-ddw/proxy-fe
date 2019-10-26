@@ -2,8 +2,8 @@ import React from 'react';
 import SEO from '../components/seo';
 import MainLayout from '../components/layouts/MainLayout';
 import Image from '../components/units/Image';
-import '../scss/styles.scss';
-import '../scss/proxy.scss';
+
+import '../scss/pages/proxy.scss';
 
 const titlePage = 'Proxy';
 
