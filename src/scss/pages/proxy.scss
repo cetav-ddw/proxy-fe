@@ -1,4 +1,4 @@
-@import '../scss/styles.scss';
+@import "../styles.scss";
 
 .content-img {
   text-align: center;
@@ -35,7 +35,7 @@
 }
 
 .img-proxy {
-  background: transparent url("../images/proxy.svg") no-repeat;
+  background: transparent url("../../images/proxy.svg") no-repeat;
   margin: 0; 
   overflow: hidden;
   text-indent: 100%;

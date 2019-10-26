@@ -1,4 +1,4 @@
-@import '../scss/styles.scss';
+@import "../styles.scss";
 
 .des-sinestesia {
   display: flex;
@@ -47,7 +47,7 @@
 }
 
 .sinestesia__title {
-  background: transparent url('../images/sinestesia.png') no-repeat;
+  background: transparent url('../../images/sinestesia.png') no-repeat;
   border: 0;
   color: transparent;
   display: inline-block;    

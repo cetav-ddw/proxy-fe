@@ -3,8 +3,8 @@ import SEO from '../components/seo';
 import MainLayout from '../components/layouts/MainLayout';
 import Title4 from '../components/units/Title4';
 import Title2 from '../components/units/Title2';
-import '../scss/styles.scss';
-import '../scss/pabellon.scss';
+
+import '../scss/pages/pabellon.scss';
 
 const titlePage = 'Pabellón';
 
