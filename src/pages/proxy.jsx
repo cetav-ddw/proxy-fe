@@ -2,8 +2,8 @@ import React from 'react';
 import SEO from '../components/seo';
 import MainLayout from '../components/layouts/MainLayout';
 import Image from '../components/units/Image';
-import '../scss/styles.scss';
-import '../scss/proxy.scss';
+
+import '../scss/pages/proxy.scss';
 
 const titlePage = 'Proxy';
 
@@ -31,25 +31,6 @@ const Proxy = () => (
                 de las tecnologías emergentes a nuestra cultura.
               </p>
             </div>
-          </section>
-          <section className="wrapper-org">
-            <h2 className="title-org">Organización</h2>
-            <p className="org__text">
-              Somos un colectivo de artistas y entusiastas de la cultura
-              digital, interesadxs en generar espacios y situaciones de
-              experimentación en torno al arte de los nuevos medios.
-            </p>
-
-            <p>
-              Y es un espacio que incentiva la exploración de Hiperrealidades
-              generadas desde nuevos medios.
-            </p>
-            <p>
-              En donde invitamos a personas creativas a indagar artísticamente
-              el simulacro, la copia sin original, la versión alterna, el
-              sustituto, la fantasía de lo hiperreal, ligadas a la influencia de
-              las tecnologías emergentes a nuestra cultura.
-            </p>
           </section>
           <section className="wrapper-org">
             <h2 className="title-org">Organización</h2>

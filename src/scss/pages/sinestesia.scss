@@ -1,0 +1,97 @@
+@import "../styles.scss";
+
+.des-sinestesia {
+  display: flex;
+  justify-content: space-between;
+  
+  @media (min-width:$breakpoint-md) {
+    padding: 0;
+    width: 90%;
+  }
+  @media (min-width: $breakpoint-xl) {
+    margin: 0 auto;    
+    max-width: 1200px;
+    text-align: center;
+    width: 55%;  
+  }
+}
+
+.note__title {  
+  text-align: center; 
+}
+
+.sinestesia-dates {
+  padding: 5px 15px 60px ;
+
+  @media (min-width: $breakpoint-xl) {
+    margin: 0 auto;
+    max-width: 1200px; 
+    padding: 60px 0; 
+  }
+}
+
+.sinestesia-note{
+  padding: 5px 15px 60px ;
+
+  @media (min-width: $breakpoint-md) {
+    padding: 10px 15px 80px ;
+  }
+  @media (min-width: $breakpoint-xl) {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+.sinestesia-dates__title {
+  text-align: center;
+}
+
+.sinestesia__title {
+  background: transparent url('../../images/sinestesia.png') no-repeat;
+  border: 0;
+  color: transparent;
+  display: inline-block;    
+  height: 600px;
+  margin: 0;
+  overflow: hidden;
+  text-indent: 100%;
+  text-shadow: none;
+  white-space: nowrap;
+  width: 75px;
+
+  @media (min-width:$breakpoint-md) {
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+
+.txt--columns{
+  @media (min-width: $breakpoint-md) {
+    font-size: 1.3rem;
+    padding: 20px;
+    width: 48%;
+  }
+}
+
+.video-sinestesia {
+  height: auto;
+  width: 100%;
+}
+
+.wrapper-video {
+  width: 100%;
+}
+
+.wrapper__des {
+  width: 75%;
+  @media (min-width: $breakpoint-xl) {
+    width: 70%;
+  }
+}
+
+.wrapper__txt--columns{ 
+  @media (min-width: $breakpoint-md) {    
+    column-count: 2;
+    display: flex;
+  }
+}

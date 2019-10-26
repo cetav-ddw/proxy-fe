@@ -36,6 +36,9 @@
 .wrapper-social__icon {
   background-repeat: no-repeat;
   margin: 5px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
 }
 
 .wrapper-social__title {

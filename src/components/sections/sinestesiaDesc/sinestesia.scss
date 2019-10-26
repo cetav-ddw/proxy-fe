@@ -1,0 +1,52 @@
+@import '../../../scss/settings/vars.scss';
+
+.des-sinestesia {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  
+  @media (min-width:$breakpoint-md) {
+    padding: 0;
+    width: 90%;
+  }
+  @media (min-width: $breakpoint-xl) {
+    margin: 0 auto;    
+    text-align: center;
+    width: 55%;  
+  }
+}
+
+.sinestesia__title {
+  background: transparent url(../../../images/sinestesia.png) no-repeat;
+  border: 0;
+  color: transparent;
+  display: inline-block;    
+  height: 600px;
+  margin: 0;
+  overflow: hidden;
+  text-indent: 100%;
+  text-shadow: none;
+  white-space: nowrap;
+  width: 75px;
+
+  @media (min-width:$breakpoint-md) {
+    margin: 0 auto;
+  }
+}
+
+.video-sinestesia {
+  height: auto;
+  width: 100%;
+}
+
+.wrapper__des {
+  width: 75%;
+
+  @media (min-width: $breakpoint-xl) {
+    width: 70%;
+  }
+}
+
+.wrapper-video {
+  width: 100%;
+}

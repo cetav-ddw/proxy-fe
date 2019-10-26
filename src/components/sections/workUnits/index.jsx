@@ -5,31 +5,25 @@ import Image from '../../units/Image';
 import './workUnit.scss';
 
 const Work = ({ allWorks }) => {
-  let modific = '';
   const structure = allWorks.map((node, index) => {
+    let itemPosition = '';
     const workItem = node.node;
-    if (index === 1) modific = '--right';
-
+    if (index === 1) itemPosition = '--right';
     return (
       <div className="works__content-work" key={workItem.id}>
-        <div className={`wrapper-image${modific} wrapper-images`}>
+        <div className={`wrapper-image${itemPosition} wrapper-images`}>
           <Image
             variant="wrapper-image__image"
             source={workItem.images[0].url}
             alt=""
           />
-          <h4 className={`wrapper-image__name${modific}`}>
-            {workItem.firstName}
-          </h4>
-          <h4 className={`wrapper-image__name${modific} lastname`}>
-            {workItem.secondName}
-          </h4>
+          <h4 className={`wrapper-image__name${itemPosition}`}>{workItem.title}</h4>
         </div>
-        <div className={`wrapper-text wrapper-text${modific}`}>
-          <p className={`wrapper-text__paragraph${modific}`}>
+        <div className={`wrapper-text wrapper-text${itemPosition}`}>
+          <p className={`wrapper-text__paragraph${itemPosition}`}>
             {workItem.description}
           </p>
-          <Link to="/" className={`wrapper-text__details${modific} details-ui`}>
+          <Link to="/" className={`wrapper-text__details${itemPosition} details-ui`}>
             mas detalles +
           </Link>
         </div>
