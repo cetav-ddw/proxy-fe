@@ -5,11 +5,10 @@ import Image from '../../units/Image';
 import './workUnit.scss';
 
 const Work = ({ allWorks }) => {
-  let modific = '';
   const structure = allWorks.map((node, index) => {
+    let modific = '';
     const workItem = node.node;
     if (index === 1) modific = '--right';
-
     return (
       <div className="works__content-work" key={workItem.id}>
         <div className={`wrapper-image${modific} wrapper-images`}>
