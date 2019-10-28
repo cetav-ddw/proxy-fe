@@ -79,19 +79,14 @@
   margin: 10px 0 0; 
 
   @media (min-width: $breakpoint-md) {
-    font-size: 3rem;
     font-weight: bold;
+    left: 250px;
     margin: 0;
     position: absolute;
-    left: 250px;
     text-align: left;
     top: 0;
     width: 300px;
   }
-
-  @media (min-width: $breakpoint-lg) {
-    font-size: 3.5rem;
-	}
 }
 
 .wrapper-image__name--right {
@@ -99,7 +94,6 @@
   margin: 10px 0 0; 
 
   @media (min-width: $breakpoint-md) {
-    font-size: 3rem;
     font-weight: bold;
     right: 285px;
     position: absolute;
@@ -107,10 +101,6 @@
     top: 0;
     width: 300px;
   }
-
-  @media (min-width: $breakpoint-lg) {
-    font-size: 3.5rem;
-	}
 }
 
 .wrapper-text {

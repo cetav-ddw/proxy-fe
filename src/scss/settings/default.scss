@@ -1,12 +1,12 @@
 body {
-  background: black;
+  background-color: black;
+  color: $white;
   margin: 0;
   padding: 0;
 }
 
-ul {
-  font-family: $regular-txt;
-  list-style: none;
+a {
+  text-decoration: none;
 }
 
 button {
@@ -14,7 +14,6 @@ button {
 }
 
 h1 {
-  color: $white;
   font-family: $title; 
   font-size: $txt-large;
   
@@ -27,7 +26,6 @@ h1 {
 }
 
 h2 {
-  color: $white;
   font-family: $title;
   font-size: $txt-large;
   letter-spacing: 3px;
@@ -42,7 +40,6 @@ h2 {
 }
 
 h3 {
-  color: $white;
   font-family: $title;
   font-size: $txt-medium;
 
@@ -55,7 +52,6 @@ h3 {
 }
 
 h4 {
-  color: $white;
   font-family: $title;
   font-size: $txt-medium;
 
@@ -67,8 +63,7 @@ h4 {
   }
 }
 
-p {
-  color: $white;   
+p { 
   font-family: $regular-txt;
   font-size: $txt-small;
   letter-spacing: 2px;
@@ -83,12 +78,7 @@ p {
   }
 }
 
-a {
-  text-decoration: none;
-}
-
-li{
-  color: $white;
+li {
   font-size: $txt-small;
   letter-spacing: 2px;
   line-height: 1.58;
@@ -99,4 +89,13 @@ li{
   @media (min-width: $breakpoint-xl) {
     font-size: $txt-large;
   }
+}
+
+ul {
+  font-family: $regular-txt;
+  list-style: none;
+}
+
+.no-obras {
+  text-align: center;
 }
