@@ -19,8 +19,8 @@ MainLayout.defaultProps = {
 };
 
 MainLayout.propTypes = {
-  mainContent: PropTypes.node.isRequired,
-  content: PropTypes.node.isRequired,
+  mainContent: PropTypes.node,
+  content: PropTypes.node,
   videoOpt: PropTypes.string
 };
 

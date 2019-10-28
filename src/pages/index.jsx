@@ -4,16 +4,14 @@ import { graphql } from 'gatsby';
 import SEO from '../components/seo';
 import MainLayout from '../components/layouts/MainLayout';
 import Modalidades from '../components/sections/modalidades';
-import Work from '../components/sections/workUnits';
+import ListaObras from '../components/sections/obras';
 import '../scss/styles.scss';
 
 const titlePage = 'Inicio';
 
 const IndexPage = ({ data }) => {
-  IndexPage.defaultProps = { data: [] };
-  IndexPage.propTypes = {
-    data: PropTypes.arrayOf(PropTypes.object)
-  };
+  const listaObras =
+    (data && data.allDatoCmsObra && data.allDatoCmsObra.edges) || [];
 
   return (
     <>
@@ -21,10 +19,15 @@ const IndexPage = ({ data }) => {
       <MainLayout
         videoOpt="home-videos/main.mp4"
         mainContent={<Modalidades />}
-        content={<Work allWorks={data.allDatoCmsObra.edges} />}
+        content={<ListaObras obras={listaObras} />}
       />
     </>
   );
+};
+
+IndexPage.defaultProps = { data: {} };
+IndexPage.propTypes = {
+  data: PropTypes.object
 };
 
 export const query = graphql`
@@ -42,7 +45,15 @@ export const query = graphql`
           images {
             url
           }
+          video {
+            url
+            thumbnailUrl
+          }
+          videoFile {
+            url
+          }
           title
+          slug
         }
       }
     }
