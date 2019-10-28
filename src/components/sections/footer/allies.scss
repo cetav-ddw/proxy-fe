@@ -24,7 +24,7 @@
 }
 
 .allies__item {
-  height: 0 auto;
+  height: auto;
   padding-bottom: 5%;
   width: 50%;
 
@@ -61,7 +61,7 @@
 }
 
 .allies__item--size {
-  height: 0 auto;
+  height: auto;
   padding-bottom: 5%;
   width: 100%;
 
@@ -90,12 +90,9 @@
   @media (min-width: $breakpoint-md) {
     font-size: $txt-large;
     padding-left:0;
-    margin: 2% 0 2% 5%;
   }
 
   @media (min-width: $breakpoint-lg) {
     display: inline;
-    font-size: $txt-large;
-    margin: 2% 0 2% 5%;
   }
 }
