@@ -1,14 +1,15 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import ObraLayout from '../components/layouts/ObraLayout';
-import Details from '../components/sections/detailsObra/';
+import Details from '../components/sections/workdetails/';
+import WorkGalery from '../components/sections/workGalery/'
 
 const Obra = ({ data }) => {
   const node = data.allDatoCmsObra.edges[0].node;
   return (
     <>
       <ObraLayout
-        mainContent={<p>galery </p>}
+        mainContent={<WorkGalery querySrc={node} />}
         content={<Details queryinfo={node} />}
       />
     </>
