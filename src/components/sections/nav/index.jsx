@@ -16,7 +16,6 @@ class Nav extends Component {
     const { toggle } = this.state;
     this.setState({ toggle: !toggle });
   }
-
   render() {
     const { toggle } = this.state;
     return (
