@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import { Link } from 'gatsby';
 import SEO from '../components/seo';
 import MainLayout from '../components/layouts/MainLayout';
 import Modalidades from '../components/sections/modalidades';
 import ListaObras from '../components/sections/obras';
-import BtnObras from '../components/sections/BtnObras';
 import '../scss/styles.scss';
+import { format } from 'util';
 
 const titlePage = 'Inicio';
 
@@ -23,7 +24,9 @@ const IndexPage = ({ data }) => {
         content={
           <>
             <ListaObras obras={listaObras}/>
-            <BtnObras />
+            <Link to='/obras' className="btn-obras">
+              <span>Ver todas las Obras</span>
+            </Link>
           </> 
         }
       /> 
