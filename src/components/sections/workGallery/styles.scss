@@ -1,6 +1,6 @@
 @import '../../../scss/settings/vars.scss';
 
-.galery {
+.gallery {
   padding: 10px 5px;
   position: relative;
 
@@ -9,7 +9,7 @@
   }
 }
 
-.galery__wrapper-img {
+.gallery__wrapper-img {
   margin: 0 auto;
   position: relative;
   width: 95%;
@@ -20,11 +20,11 @@
   }
 }
 
-.galery__img-art {
+.gallery__img-art {
   max-width: 100%;
 }
 
-.galery__bnt {
+.gallery__bnt {
   background: transparent;
   border: 0;
   border-radius: 100%;
@@ -74,15 +74,15 @@
   }
 }
 
-.galery__bnt--left {
+.gallery__bnt--left {
   left: 0;
 }
 
-.galery__bnt--right {
+.gallery__bnt--right {
   right: 0;
 }
 
-.galery__svg {
+.gallery__svg {
   left: 10px;
   position: absolute;
   top: 8px;
@@ -93,7 +93,7 @@
   }
 }
 
-.galery__ctx {
+.gallery__ctx {
   display: none;
   padding: 0;
   position: relative;
