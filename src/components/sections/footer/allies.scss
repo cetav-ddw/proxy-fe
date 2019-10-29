@@ -1,9 +1,7 @@
 @import '../../../scss/styles.scss';
 
 .allies {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 5% 5% 10% 5%;
+  display: inline-block;
 
   @media (min-width: $breakpoint-md) {
     display: block;
@@ -16,17 +14,14 @@
   }
 
   @media (min-width: $breakpoint-xl) { 
-    display: block;
-    flex-wrap: nowrap;
     max-width: 1200px;
     padding-left: 4%;
   }
 }
 
 .allies__item {
-  height: auto;
   padding-bottom: 5%;
-  width: 50%;
+  width: 49%;
 
   @media (min-width: $breakpoint-md) {
     width: 27%;
@@ -61,7 +56,6 @@
 }
 
 .allies__item--size {
-  height: auto;
   padding-bottom: 5%;
   width: 100%;
 
