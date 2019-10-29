@@ -1,10 +1,16 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import ObraLayout from '../components/layouts/ObraLayout';
+import Details from '../components/sections/detailsObra/';
 
 const Obra = ({ data }) => {
+  const node = data.allDatoCmsObra.edges[0].node;
   return (
     <>
-      <h1>Aqui va el detalle de la obra</h1>
+      <ObraLayout
+        mainContent={<p>galery </p>}
+        content={<Details queryinfo={node} />}
+      />
     </>
   );
 };
@@ -14,12 +20,23 @@ export const query = graphql`
     allDatoCmsObra(filter: { slug: { eq: $slug } }) {
       edges {
         node {
+          artist
+          bio
+          country
+          description
           id
+          locale
           technique
-          originalId
+          year
           images {
-            path
-            originalId
+            url
+          }
+          video {
+            url
+            thumbnailUrl
+          }
+          videoFile {
+            url
           }
           title
         }
