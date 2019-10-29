@@ -5,6 +5,7 @@ import SEO from '../components/seo';
 import MainLayout from '../components/layouts/MainLayout';
 import Modalidades from '../components/sections/modalidades';
 import ListaObras from '../components/sections/obras';
+import BtnObras from '../components/sections/BtnObras';
 import '../scss/styles.scss';
 
 const titlePage = 'Inicio';
@@ -19,8 +20,13 @@ const IndexPage = ({ data }) => {
       <MainLayout
         videoOpt="home-videos/main.mp4"
         mainContent={<Modalidades />}
-        content={<ListaObras obras={listaObras} />}
-      />
+        content={
+          <>
+            <ListaObras obras={listaObras}/>
+            <BtnObras />
+          </> 
+        }
+      /> 
     </>
   );
 };
