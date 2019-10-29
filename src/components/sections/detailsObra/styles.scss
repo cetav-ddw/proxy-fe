@@ -1,0 +1,79 @@
+@import '../../../scss/settings/vars.scss';
+
+.about-artist {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 40px 10px;
+
+  @media ( min-width: $breakpoint-md) {
+    padding: 20px 100px 60px 100px;
+  }
+
+  @media ( min-width: $breakpoint-md) {
+    padding: 20px 100px 100px 100px;
+  }
+}
+
+.about-artist__wrapper-info {
+  margin: 20px 0;
+  position: relative;
+
+  @media (min-width: $breakpoint-md) {
+    height: 370px;
+  }
+  @media (min-width: $breakpoint-lg) {
+    height: 400px;
+  }
+}
+
+.about-artist__title-name {
+  color: $white;
+  margin: 20px 0;
+
+  @media (min-width: $breakpoint-md) {
+    width: 50%;
+  }
+  @media (min-width: $breakpoint-lg) {
+    width: 40%;
+  }
+}
+
+.list-artist-ui {
+  display: inline-block;
+  padding: 0;
+}
+
+.about-artist__item {
+  color: $white;
+  font-weight: bold;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $txt-medium;
+  }
+  @media (min-width: $breakpoint-lg) {
+    font-size: $txt-medium;
+  }
+}
+
+.about-artist__paragraph {
+  color: $white;
+  font-size: .9rem;
+  opacity: .9;
+
+  @media (min-width: $breakpoint-md) {
+    position: absolute;
+    right: 0;
+    top: 130px;
+    width: 65%;
+  }
+  @media (min-width: $breakpoint-lg) {
+    font-size: 1.1rem; 
+    right: 30px;
+  }
+}
+
+.about-artist__subtitle {
+  color: $white;
+  margin-bottom: 15px;
+  text-align: left;
+}

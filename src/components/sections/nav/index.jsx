@@ -58,6 +58,11 @@ class Nav extends Component {
                 Pabellón
               </Link>
             </li>
+            <li className="nav-list__item">
+              <Link to="/obras" className="nav-list__link">
+                Obras
+              </Link>
+            </li>
           </ul>
         </div>
       </>

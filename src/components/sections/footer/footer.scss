@@ -3,3 +3,19 @@
 footer {
   background: transparent url("../../../images/bg-footer-h.jpg") no-repeat;
 }
+
+.wapper-footer {
+    margin: 0 auto;
+
+  @media(min-width: $breakpoint-md) {
+    max-width: $breakpoint-md;
+  }
+
+  @media(min-width: $breakpoint-lg) {
+    max-width: $breakpoint-lg;
+  }
+
+  @media(min-width: $breakpoint-xl) {
+    max-width: 1200px;
+  }
+}
