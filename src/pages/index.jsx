@@ -7,7 +7,6 @@ import MainLayout from '../components/layouts/MainLayout';
 import Modalidades from '../components/sections/modalidades';
 import ListaObras from '../components/sections/obras';
 import '../scss/styles.scss';
-import { format } from 'util';
 
 const titlePage = 'Inicio';
 
@@ -25,7 +24,7 @@ const IndexPage = ({ data }) => {
           <>
             <ListaObras obras={listaObras}/>
             <Link to='/obras' className="btn-obras">
-              <span>Ver todas las Obras</span>
+              <span className="btn-obras__text">Ver todas las Obras</span>
             </Link>
           </> 
         }
