@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import { Link } from 'gatsby';
 import SEO from '../components/seo';
 import MainLayout from '../components/layouts/MainLayout';
 import Modalidades from '../components/sections/modalidades';
@@ -19,8 +20,15 @@ const IndexPage = ({ data }) => {
       <MainLayout
         videoOpt="home-videos/main.mp4"
         mainContent={<Modalidades />}
-        content={<ListaObras obras={listaObras} />}
-      />
+        content={
+          <>
+            <ListaObras obras={listaObras}/>
+            <Link to='/obras' className="btn-obras">
+              <span className="btn-obras__text">Ver todas las Obras</span>
+            </Link>
+          </> 
+        }
+      /> 
     </>
   );
 };
