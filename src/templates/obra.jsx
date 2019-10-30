@@ -9,7 +9,7 @@ const Obra = ({ data }) => {
   return (
     <>
       <ObraLayout
-        mainContent={<WorkGallery mediaData={{imageArray:node.images, urlVideo: node.video}} />}
+        mainContent={<WorkGallery mediaData={node.images} />}
         content={<Details queryinfo={node} />}
       />
     </>
