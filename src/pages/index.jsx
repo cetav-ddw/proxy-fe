@@ -22,13 +22,13 @@ const IndexPage = ({ data }) => {
         mainContent={<Modalidades />}
         content={
           <>
-            <ListaObras obras={listaObras}/>
-            <Link to='/obras' className="btn-obras">
+            <ListaObras obras={listaObras} />
+            <Link to="/obras" className="btn-obras">
               <span className="btn-obras__text">Ver todas las Obras</span>
             </Link>
-          </> 
+          </>
         }
-      /> 
+      />
     </>
   );
 };
@@ -50,6 +50,9 @@ export const query = graphql`
           locale
           technique
           year
+          thumbnail {
+            url
+          }
           images {
             url
           }
