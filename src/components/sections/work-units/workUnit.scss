@@ -59,19 +59,9 @@
 }
 
 .wrapper-image__image {
+  box-shadow: 2px 2px 0px rgba(21, 224, 37, .25);
   max-width: 100%;
-
-  @media (min-width: $breakpoint-md) {
-    width: 280px;
-    height: 350px;
-    object-fit: cover;
-  }
-
-  @media (min-width: $breakpoint-lg) {
-    width: 300px;
-    height: 400px;
-  }
-  
+  padding: 0 5px 5px 0;
 }
 
 .wrapper-image__name {
@@ -80,7 +70,7 @@
 
   @media (min-width: $breakpoint-md) {
     font-weight: bold;
-    left: 250px;
+    left: 350px;
     margin: 0;
     position: absolute;
     text-align: left;
@@ -95,7 +85,7 @@
 
   @media (min-width: $breakpoint-md) {
     font-weight: bold;
-    right: 285px;
+    right: 350px;
     position: absolute;
     text-align: right;
     top: 0;
