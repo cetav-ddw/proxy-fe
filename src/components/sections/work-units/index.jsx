@@ -24,7 +24,7 @@ const Work = ({ obra, idx }) => {
         <h3 className={`wrapper-image__name${itemPosition}`}>{obra.title}</h3>
       </div>
       <div className={`wrapper-text wrapper-text${itemPosition}`}>
-        <p className={`wrapper-text__paragraph text-gradient ${itemPosition}`}>
+        <p className={`wrapper-text__paragraph${itemPosition}`}>
           {obra.description}
         </p>
         <Link
