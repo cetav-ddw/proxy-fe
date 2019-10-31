@@ -17,13 +17,6 @@
 .about-artist__wrapper-info {
   margin: 20px 0;
   position: relative;
-
-  @media (min-width: $breakpoint-md) {
-    height: 370px;
-  }
-  @media (min-width: $breakpoint-lg) {
-    height: 400px;
-  }
 }
 
 .about-artist__title-name {
@@ -41,6 +34,7 @@
 .list-artist-ui {
   display: inline-block;
   padding: 0;
+  width: 250px;
 }
 
 .about-artist__item {
@@ -61,19 +55,25 @@
   opacity: .9;
 
   @media (min-width: $breakpoint-md) {
-    position: absolute;
-    right: 0;
-    top: 130px;
     width: 65%;
   }
   @media (min-width: $breakpoint-lg) {
     font-size: 1.1rem; 
-    right: 30px;
   }
 }
 
 .about-artist__subtitle {
   color: $white;
+  font-size: 2rem;
   margin-bottom: 15px;
   text-align: left;
+}
+
+.wapper-info {
+
+  @media (min-width: $breakpoint-md) {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  }
 }
