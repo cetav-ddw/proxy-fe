@@ -1,5 +1,5 @@
 import React from 'react';
-import Work from '../workUnits';
+import Work from '../work-units';
 
 const ListaObras = ({ obras }) => {
   function ObrasProxy() {

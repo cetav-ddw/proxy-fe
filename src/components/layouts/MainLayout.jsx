@@ -8,8 +8,8 @@ const MainLayout = ({ mainContent, content, videoOpt }) => (
   <>
     <Header videoSrc={videoOpt} />
     <SocialMedia />
-    <div>{mainContent}</div>
-    <div>{content}</div>
+    {mainContent}
+    {content}
     <Footer />
   </>
 );
