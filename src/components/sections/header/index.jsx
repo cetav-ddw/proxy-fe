@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import EventDate from '../eventDate';
-import HeroBanner from '../herobanner';
+import EventDate from '../event-date';
+import HeroBanner from '../hero-banner';
 import Nav from '../nav';
 import './header.scss';
 
