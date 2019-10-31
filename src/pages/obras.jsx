@@ -32,6 +32,9 @@ export const pageQuery = graphql`
           technique
           description
           originalId
+          thumbnail {
+            url
+          }
           images {
             url
           }

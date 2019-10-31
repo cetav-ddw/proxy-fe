@@ -9,10 +9,10 @@ import './workUnit.scss';
 const Work = ({ obra, idx }) => {
   const itemPosition = idx % 2 !== 0 ? '--right' : '';
   const fallbackSrc = 'https://via.placeholder.com/500';
-  const hasImage = obra.images && obra.images.length > 0;
-  let imgSrc = hasImage ? obra.images[0].url : fallbackSrc;
+  const imgThumbnail = obra.thumbnail && obra.thumbnail.url;
+  let imgSrc = imgThumbnail || fallbackSrc;
 
-  if ((obra.video || obra.videoFile) && !hasImage) {
+  if ((obra.video || obra.videoFile) && !imgThumbnail) {
     // thumbnailUrl lo provee Youtube/Vimeo cuando se agregue el link en Dato
     imgSrc = (obra.video && obra.video.thumbnailUrl) || fallbackSrc;
   }
