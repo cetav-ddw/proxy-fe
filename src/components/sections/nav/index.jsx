@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
-import Button from '../../units/Button';
+import Button from '../../units/Button'
 import './nav.scss';
 
 class Nav extends Component {
@@ -16,7 +16,6 @@ class Nav extends Component {
     const { toggle } = this.state;
     this.setState({ toggle: !toggle });
   }
-
   render() {
     const { toggle } = this.state;
     return (
