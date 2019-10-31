@@ -8,12 +8,12 @@ const WorkGallery = ({ mediaData }) => (
     {
       mediaData.length > 1 &&
       <>
-        <Button variant="gallery__bnt gallery__bnt--left arrow-left">
+        <Button variant="gallery__bnt gallery__bnt--left">
           <svg className="gallery__svg" width="14px" height="24px" viewBox="-2 -2 14 24" version="1.1">
             <polyline id="Shape" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none" points="10 0 0 10 10 20"></polyline>
           </svg>
         </Button>
-        <Button variant="gallery__bnt gallery__bnt--right arrow-right">
+        <Button variant="gallery__bnt gallery__bnt--right">
           <svg className="gallery__svg" width="14px" height="24px" viewBox="-2 -2 14 24" version="1.1">
             <polyline id="Shape" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none" points="0 0 10 10 0 20"></polyline>
           </svg>

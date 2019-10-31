@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.scss';
+import './workDetails.scss';
 
 const detailsObra = ({ queryinfo }) => (
   <section className="about-artist">
