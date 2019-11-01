@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import Header from '../sections/header';
 import Footer from '../sections/footer';
 
-const obraLayout = ({ mainContent, content, videoOpt }) => (
+const obraLayout = ({ mainContent, content, imgOpt }) => (
   <>
-    <Header ImageSrc={videoOpt} />
+    <Header ImageSrc={imgOpt} />
     <div>{mainContent}</div>
     <div>{content}</div>
     <Footer />
@@ -13,13 +13,13 @@ const obraLayout = ({ mainContent, content, videoOpt }) => (
 );
 
 obraLayout.defaultProps = {
-  videoOpt: ''
+  imgOpt: ''
 };
 
 obraLayout.propTypes = {
   mainContent: PropTypes.node,
   content: PropTypes.node,
-  videoOpt: PropTypes.string
+  imgOpt: PropTypes.string
 };
 
 export default obraLayout;

@@ -4,9 +4,9 @@ import Header from '../sections/header';
 import SocialMedia from '../sections/social-media';
 import Footer from '../sections/footer';
 
-const MainLayout = ({ mainContent, content, videoOpt }) => (
+const MainLayout = ({ mainContent, content, imgOpt }) => (
   <>
-    <Header imageSrc={videoOpt} />
+    <Header imageSrc={imgOpt} />
     <SocialMedia />
     {mainContent}
     {content}
@@ -15,13 +15,13 @@ const MainLayout = ({ mainContent, content, videoOpt }) => (
 );
 
 MainLayout.defaultProps = {
-  videoOpt: ''
+  imgOpt: ''
 };
 
 MainLayout.propTypes = {
   mainContent: PropTypes.node,
   content: PropTypes.node,
-  videoOpt: PropTypes.string
+  imgOpt: PropTypes.string
 };
 
 export default MainLayout;
