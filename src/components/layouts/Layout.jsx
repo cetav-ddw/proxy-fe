@@ -1,27 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Header from '../sections/header';
-import SocialMedia from '../sections/social-media';
 import Footer from '../sections/footer';
 
-const MainLayout = ({ mainContent, content, imgOpt }) => (
+const Layout = ({ children, imgOpt }) => (
   <>
     <Header imageSrc={imgOpt} />
-    <SocialMedia />
-    {mainContent}
-    {content}
+    {children}
     <Footer />
   </>
 );
 
-MainLayout.defaultProps = {
+Layout.defaultProps = {
   imgOpt: ''
 };
 
-MainLayout.propTypes = {
+Layout.propTypes = {
   mainContent: PropTypes.node,
   content: PropTypes.node,
   imgOpt: PropTypes.string
 };
 
-export default MainLayout;
+export default Layout;
