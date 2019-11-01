@@ -50,14 +50,12 @@ const WorkGallery = ({ mediaData }) => (
     )}
     {mediaData.length > 0 && (
       <div className="gallery__wrapper-img">
-        {mediaData.map((item, index) => (
-          <Image
-            key={index}
-            variant="gallery__img-art"
-            source={item.url}
-            alt=""
-          />
-        ))}
+        <Image
+          key={1}
+          variant="gallery__img-art"
+          source={mediaData[0].url}
+          alt=""
+        />
       </div>
     )}
   </section>
