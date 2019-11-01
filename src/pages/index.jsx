@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
     <>
       <SEO title={titlePage} />
       <MainLayout
-        videoOpt="home-videos/main.mp4"
+        imgOpt="home-videos/Home.jpg"
         mainContent={<Modalidades />}
         content={
           <>
