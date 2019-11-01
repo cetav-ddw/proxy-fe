@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from '../components/seo';
-import MainLayout from '../components/layouts/MainLayout';
+import Layout from '../components/layouts/Layout';
+import SocialMedia from '../components/sections/social-media';
 
 import '../scss/pages/pabellon.scss';
 
@@ -60,7 +61,10 @@ function MainContentPabellon() {
 const Pabellon = () => (
   <>
     <SEO title={titlePage} />
-    <MainLayout videoOpt="pabellon.mp4" mainContent={<MainContentPabellon />} />
+    <Layout videoOpt="pabellon.mp4">
+      <SocialMedia />
+      <MainContentPabellon />
+    </Layout>
   </>
 );
 

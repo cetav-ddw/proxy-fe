@@ -1,27 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Header from '../sections/header';
-import SocialMedia from '../sections/social-media';
 import Footer from '../sections/footer';
 
-const MainLayout = ({ mainContent, content, videoOpt }) => (
+const Layout = ({ children, videoOpt }) => (
   <>
     <Header videoSrc={videoOpt} />
-    <SocialMedia />
-    {mainContent}
-    {content}
+    {children}
     <Footer />
   </>
 );
 
-MainLayout.defaultProps = {
+Layout.defaultProps = {
   videoOpt: ''
 };
 
-MainLayout.propTypes = {
+Layout.propTypes = {
   mainContent: PropTypes.node,
   content: PropTypes.node,
   videoOpt: PropTypes.string
 };
 
-export default MainLayout;
+export default Layout;
