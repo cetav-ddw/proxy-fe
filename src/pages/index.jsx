@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
   return (
     <>
       <SEO title={titlePage} />
-      <Layout videoOpt="home-videos/main.mp4">
+      <Layout imgOpt="home-videos/Home.jpg">
         <SocialMedia />
         <Modalidades />
         <ListaObras obras={listaObras} />

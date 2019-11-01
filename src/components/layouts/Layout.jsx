@@ -3,22 +3,22 @@ import PropTypes from 'prop-types';
 import Header from '../sections/header';
 import Footer from '../sections/footer';
 
-const Layout = ({ children, videoOpt }) => (
+const Layout = ({ children, imgOpt }) => (
   <>
-    <Header videoSrc={videoOpt} />
+    <Header imageSrc={imgOpt} />
     {children}
     <Footer />
   </>
 );
 
 Layout.defaultProps = {
-  videoOpt: ''
+  imgOpt: ''
 };
 
 Layout.propTypes = {
   mainContent: PropTypes.node,
   content: PropTypes.node,
-  videoOpt: PropTypes.string
+  imgOpt: PropTypes.string
 };
 
 export default Layout;
