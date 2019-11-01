@@ -10,7 +10,7 @@ const ListaObras = ({ obras }) => {
 
   return (
     <section className="works">
-      <h2>Pabellón - Pavillion</h2>
+      <h2>Pabellón/Pavillion</h2>
       {obras.length > 0 ? (
         <ObrasProxy />
       ) : (
