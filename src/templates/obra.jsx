@@ -2,14 +2,23 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import ObraLayout from '../components/layouts/ObraLayout';
 import Details from '../components/sections/workdetails/';
-import WorkGallery from '../components/sections/workGallery/'
+import WorkGallery from '../components/sections/workGallery/';
+import WorkVideo from '../components/sections/work-video';
 
 const Obra = ({ data }) => {
   const node = data.allDatoCmsObra.edges[0].node;
+  const hasVideo = node.video || node.videoFile;
+
   return (
     <>
       <ObraLayout
-        mainContent={<WorkGallery mediaData={node.images} />}
+        mainContent={
+          hasVideo ? (
+            <WorkVideo mediaData={node} />
+          ) : (
+            <WorkGallery mediaData={node.images} />
+          )
+        }
         content={<Details queryinfo={node} />}
       />
     </>
@@ -29,6 +38,9 @@ export const query = graphql`
           locale
           technique
           year
+          thumbnail {
+            url
+          }
           images {
             url
           }

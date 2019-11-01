@@ -1,0 +1,13 @@
+@import '../../../scss/settings/vars.scss';
+
+.obra__video-wrap {
+  margin: 0 auto;
+  max-width: 980px;
+  padding-top: 5rem;
+
+  video {
+    border: 5px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    max-width: 100%;
+  }
+}

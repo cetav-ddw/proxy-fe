@@ -6,8 +6,8 @@ import Footer from '../sections/footer';
 const obraLayout = ({ mainContent, content, videoOpt }) => (
   <>
     <Header videoSrc={videoOpt} />
-    <div>{mainContent}</div>
-    <div>{content}</div>
+    {mainContent}
+    {content}
     <Footer />
   </>
 );
