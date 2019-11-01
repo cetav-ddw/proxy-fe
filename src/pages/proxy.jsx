@@ -1,7 +1,8 @@
 import React from 'react';
 import SEO from '../components/seo';
-import MainLayout from '../components/layouts/MainLayout';
+import Layout from '../components/layouts/Layout';
 import Image from '../components/units/Image';
+import SocialMedia from '../components/sections/social-media';
 
 import '../scss/pages/proxy.scss';
 
@@ -51,7 +52,10 @@ function MainContentProxy() {
 const Proxy = () => (
   <>
     <SEO title={titlePage} />
-    <MainLayout mainContent={<MainContentProxy />} />
+    <Layout>
+      <SocialMedia />
+      <MainContentProxy />
+    </Layout>
   </>
 );
 

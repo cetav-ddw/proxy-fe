@@ -1,20 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Video from '../../units/Video';
+import Image from '../../units/Image';
 import './herobanner.scss';
 
-const HeroBanner = ({ videoSrc }) => (
+const HeroBanner = ({ imageSrc }) => (
   <div className="herobanner">
-    <Video
-      variant="herobanner__video"
-      poster="bg-footer-h.jpg"
-      source={videoSrc}
-    />
+    <Image variant="herobanner__video" source={imageSrc} />
   </div>
 );
 
 HeroBanner.propTypes = {
-  videoSrc: PropTypes.string.isRequired
+  imageSrc: PropTypes.string.isRequired
 };
 
 export default HeroBanner;

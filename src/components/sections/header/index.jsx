@@ -5,20 +5,20 @@ import HeroBanner from '../hero-banner';
 import Nav from '../nav';
 import './header.scss';
 
-const Header = ({ videoSrc }) => (
+const Header = ({ imageSrc }) => (
   <header className="header">
     <EventDate />
-    {videoSrc && <HeroBanner videoSrc={videoSrc} />}
+    {imageSrc && <HeroBanner imageSrc={imageSrc} />}
     <Nav />
   </header>
 );
 
 Header.defaultProps = {
-  videoSrc: ''
+  imageSrc: ''
 };
 
 Header.propTypes = {
-  videoSrc: PropTypes.string
+  imageSrc: PropTypes.string
 };
 
 export default Header;

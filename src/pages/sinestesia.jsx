@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from '../components/seo';
-import MainLayout from '../components/layouts/MainLayout';
+import Layout from '../components/layouts/Layout';
+import SocialMedia from '../components/sections/social-media';
 
 import '../scss/pages/sinestesia.scss';
 
@@ -52,10 +53,10 @@ function MainContentSinestesia() {
 const Sinestesia = () => (
   <>
     <SEO title={titlePage} />
-    <MainLayout
-      videoOpt="sinestesia.mp4"
-      mainContent={<MainContentSinestesia />}
-    />
+    <Layout videoOpt="sinestesia.mp4">
+      <SocialMedia />
+      <MainContentSinestesia />
+    </Layout>
   </>
 );
 

@@ -1,10 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import SEO from '../components/seo';
-import Header from '../components/sections/header';
+import Layout from '../components/layouts/Layout';
 import SocialMedia from '../components/sections/social-media';
 import ListaObras from '../components/sections/obras';
-import Footer from '../components/sections/footer';
 
 const titlePage = 'Obras';
 
@@ -15,10 +14,10 @@ const Obras = ({ data }) => {
   return (
     <>
       <SEO title={titlePage} />
-      <Header />
-      <SocialMedia />
-      <ListaObras obras={listaObras} />
-      <Footer />
+      <Layout>
+        <SocialMedia />
+        <ListaObras obras={listaObras} />
+      </Layout>
     </>
   );
 };
