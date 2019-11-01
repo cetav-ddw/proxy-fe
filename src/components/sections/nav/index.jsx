@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
-import Button from '../../units/Button'
+import Button from '../../units/Button';
 import './nav.scss';
 
 class Nav extends Component {
@@ -55,7 +55,7 @@ class Nav extends Component {
             </li>
             <li className="nav-list__item">
               <Link to="/pabellon" className="nav-list__link">
-                Pabellón
+                Pabellón/Pavillion
               </Link>
             </li>
             <li className="nav-list__item">

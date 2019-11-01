@@ -5,7 +5,7 @@ import Layout from '../components/layouts/Layout';
 import SocialMedia from '../components/sections/social-media';
 import ListaObras from '../components/sections/obras';
 
-const titlePage = 'Pabellon';
+const titlePage = 'Pabellón/Pavillion';
 
 const Obras = ({ data }) => {
   const listaObras =
