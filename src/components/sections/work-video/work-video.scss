@@ -1,0 +1,29 @@
+@import '../../../scss/settings/vars.scss';
+
+.obra__video-wrap {
+  margin: 0 auto;
+  max-width: 980px;
+  padding-top: 5rem;
+
+  video {
+    border: 5px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    max-width: 100%;
+  }
+}
+
+.fluid-video {
+  height: 0;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  position: relative;
+  
+
+  iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}

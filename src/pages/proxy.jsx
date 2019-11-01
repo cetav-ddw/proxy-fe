@@ -1,7 +1,8 @@
 import React from 'react';
 import SEO from '../components/seo';
-import MainLayout from '../components/layouts/MainLayout';
+import Layout from '../components/layouts/Layout';
 import Image from '../components/units/Image';
+import SocialMedia from '../components/sections/social-media';
 
 import '../scss/pages/proxy.scss';
 
@@ -14,6 +15,7 @@ function MainContentProxy() {
         <div className="ws-proxy">
           <h1 className="img-proxy">Proxy</h1>
           <p>
+<<<<<<< HEAD
             Es el pabellón para Costa Rica de la 4ta edición de la Bienal de Arte DigitalThe Wrong.
           </p>
           <p>
@@ -21,6 +23,12 @@ function MainContentProxy() {
             desde el arte digital conceptos en torno al tema principal como: el simulacro, la copia sin original, 
             la versión alterna, el sustituto, 
             la fantasía de lo hiperreal, etc., ligadas a la influencia de las tecnologías emergentes a nuestra cultura.
+=======
+          Es el pabellón para Costa Rica de la 4ta edición de la Bienal de Arte DigitalThe Wrong.
+          </p>
+          <p>
+          Nuestro tema es la Hiperrealidad, haciendo una invitación a personas creativas a indagar desde el arte digital conceptos en torno al tema principal como: el simulacro, la copia sin original, la versión alterna, el sustituto, la fantasía de lo hiperreal, etc., ligadas a la influencia de lastecnologías emergentes a nuestra cultura.
+>>>>>>> 06ad45c5e633c7dc1edc9a44c535486a46ce3421
           </p>
         </div>
       </section>
@@ -46,7 +54,10 @@ function MainContentProxy() {
 const Proxy = () => (
   <>
     <SEO title={titlePage} />
-    <MainLayout mainContent={<MainContentProxy />} />
+    <Layout>
+      <SocialMedia />
+      <MainContentProxy />
+    </Layout>
   </>
 );
 

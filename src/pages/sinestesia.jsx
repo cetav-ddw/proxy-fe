@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from '../components/seo';
-import MainLayout from '../components/layouts/MainLayout';
+import Layout from '../components/layouts/Layout';
+import SocialMedia from '../components/sections/social-media';
 
 import '../scss/pages/sinestesia.scss';
 
@@ -12,17 +13,16 @@ function MainContentSinestesia() {
       <section className="des-sinestesia">
         <h1 className="sinestesia__title">Sinestesia</h1>
         <div className="wrapper__des">
-            <p>
-              Son una serie de performances improvisados donde artistas de diversas 
-              disciplinas buscan ampliar sus conocimientos y experimentar con nuevas herramientas 
-              digitales, para generar diálogos artísticos interdisciplinarios en torno al arte de 
-              los nuevos medios. 
-            </p>
-            <p>
-              Para dicha modalidad, ayudamos a personas a agruparse para crear 
-              una propuesta de performance multimediático en tiempo real, en donde las personas 
-              puedan complementarse en cuanto conocimientos técnicos y conceptuales.
-            </p>
+          <p>
+            Son una serie de performances improvisados donde artistas de diversas disciplinas buscan
+            ampliar sus conocimientos y experimentar con nuevas herramientas digitales, para generar
+            diálogos artísticos interdisciplinarios entorno al arte de los nuevos medios.
+          </p>
+          <p>
+          Para dicha modalidad, ayudamos a personas a agruparse para crear una propuesta de
+          performance multimediático en tiempo real, en donde las personas puedan complementarse en
+          cuanto conocimientos técnicos y conceptuales.
+          </p>
         </div>
       </section>
       <section className="sinestesia-dates">
@@ -50,10 +50,10 @@ function MainContentSinestesia() {
 const Sinestesia = () => (
   <>
     <SEO title={titlePage} />
-    <MainLayout
-      videoOpt="sinestesia.mp4"
-      mainContent={<MainContentSinestesia />}
-    />
+    <Layout videoOpt="sinestesia.mp4">
+      <SocialMedia />
+      <MainContentSinestesia />
+    </Layout>
   </>
 );
 

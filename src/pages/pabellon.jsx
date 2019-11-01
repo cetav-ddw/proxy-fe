@@ -1,51 +1,66 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import SEO from '../components/seo';
-import MainLayout from '../components/layouts/MainLayout';
+import Layout from '../components/layouts/Layout';
+import SocialMedia from '../components/sections/social-media';
+import ListaObras from '../components/sections/obras';
 
-import '../scss/pages/pabellon.scss';
+const titlePage = 'Pabellón/Pavillion';
 
-const titlePage = 'Pabellón';
+const Obras = ({ data }) => {
+  const listaObras =
+    (data && data.allDatoCmsObra && data.allDatoCmsObra.edges) || [];
 
-function MainContentPabellon() {
   return (
     <>
-      <section className="desc-pabellon">
-        <h1 className="pabellon__img">Pabellón</h1>
-        <div className="wrapper__des">
-          <p>
-            En esta modalidad debes de participar con una obra de nuevos medios
-            relacionados con la hiperrealidad para ser expuesta durante las
-            fechas de la bienal.
-          </p>
-        </div>
-      </section>
-      <section className="desc-requi">
-        <div className="requi">
-          <h2 className="requi__title">Requisitos</h2>
-          <ul className="requi__list">
-            <li className="requi__list-item">
-              Las obras serán registradas por la organización.
-            </li>
-            <li className="requi__list-item">
-              Las obras deben ser arte digital y de nuevos medios.
-            </li>
-            <li className="requi__list-item">
-              Los gastos que puedan surgir para la exposición física de los
-              trabajos no corren por cuenta de la bienal, pero desde la
-              organización podemos ayudar a conseguir financiamiento.
-            </li>
-          </ul>
-        </div>
-      </section>
+
+      <SEO title={titlePage} />
+      <Layout>
+        <SocialMedia />          
+        <section className="desc-pabellon">
+          <h1 className="pabellon__img">Pabellón</h1>
+          <div className="wrapper__des">
+            <p>
+              En esta modalidad se participó con una obra de nuevos medios
+              relacionados con la hiperrealidad para ser expuesta durante las
+              fechas de la bienal.
+            </p>
+          </div>
+        </section>
+        <ListaObras obras={listaObras} />
+      </Layout>
     </>
   );
-}
+};
 
-const Pabellon = () => (
-  <>
-    <SEO title={titlePage} />
-    <MainLayout videoOpt="pabellon.mp4" mainContent={<MainContentPabellon />} />
-  </>
-);
+export const pageQuery = graphql`
+  query AllObrasQuery {
+    allDatoCmsObra {
+      edges {
+        node {
+          id
+          technique
+          description
+          originalId
+          thumbnail {
+            url
+          }
+          images {
+            url
+          }
+          video {
+            url
+            thumbnailUrl
+          }
+          videoFile {
+            url
+          }
+          title
+          slug
+        }
+      }
+    }
+  }
+`;
 
-export default Pabellon;
+export default Obras;

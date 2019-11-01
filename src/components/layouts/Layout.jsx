@@ -3,23 +3,22 @@ import PropTypes from 'prop-types';
 import Header from '../sections/header';
 import Footer from '../sections/footer';
 
-const obraLayout = ({ mainContent, content, imgOpt }) => (
+const Layout = ({ children, imgOpt }) => (
   <>
-    <Header ImageSrc={imgOpt} />
-    {mainContent}
-    {content}
+    <Header imageSrc={imgOpt} />
+    {children}
     <Footer />
   </>
 );
 
-obraLayout.defaultProps = {
+Layout.defaultProps = {
   imgOpt: ''
 };
 
-obraLayout.propTypes = {
+Layout.propTypes = {
   mainContent: PropTypes.node,
   content: PropTypes.node,
   imgOpt: PropTypes.string
 };
 
-export default obraLayout;
+export default Layout;
