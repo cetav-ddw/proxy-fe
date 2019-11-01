@@ -6,8 +6,8 @@ import Footer from '../sections/footer';
 const obraLayout = ({ mainContent, content, imgOpt }) => (
   <>
     <Header ImageSrc={imgOpt} />
-    <div>{mainContent}</div>
-    <div>{content}</div>
+    {mainContent}
+    {content}
     <Footer />
   </>
 );
