@@ -1,0 +1,11 @@
+@import "../styles.scss";
+
+.wrapper__des--center{
+  margin: 0 auto;
+  padding: 30px;
+
+  @media (min-width: $breakpoint-xl) {
+    max-width: 1200px;
+    width: 70%;
+  }
+}

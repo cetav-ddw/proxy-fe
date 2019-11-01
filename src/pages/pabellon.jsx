@@ -17,22 +17,6 @@ function MainContentPabellon() {
             relacionados con la hiperrealidad para ser expuesta durante las
             fechas de la bienal.
           </p>
-          <h2 className="desc-pabellon__subtitle">¿QUE ES LA HIPERREALIDAD?</h2>
-          <p>
-            &quot;Es la interpretación descompensada de la realidad, creada por
-            nosotros que se admite como verosímil y que llega a sustituir a la
-            realidad en la que se basó&quot;.
-          </p>
-          <p>
-            &quot;En la hiperrealidad los simuladores buscan hacer que toda la
-            realidad coincida con sus modelos de simulación&quot;.
-          </p>
-          <p>
-            &quot;Es un medio para describir la forma en la conciencia define lo
-            que es considerado real, en un mundo donde los medios de
-            comunicación pueden modelar y filtrar de manera radical la manera en
-            que percibimos un acontecimiento o experiencia&quot;.
-          </p>
         </div>
       </section>
       <section className="desc-requi">
