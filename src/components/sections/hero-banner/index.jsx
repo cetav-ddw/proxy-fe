@@ -7,7 +7,6 @@ const HeroBanner = ({ imageSrc }) => (
   <div className="herobanner">
     <Image
       variant="herobanner__video"
-      poster="Home.jpg"
       source={imageSrc}
     />
   </div>
