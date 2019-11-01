@@ -13,17 +13,14 @@ function MainContentSinestesia() {
         <h1 className="sinestesia__title">Sinestesia</h1>
         <div className="wrapper__des">
           <p>
-            Es una serie de performances improvisados que integran multimedia.
+            Son una serie de performances improvisados donde artistas de diversas disciplinas buscan
+            ampliar sus conocimientos y experimentar con nuevas herramientas digitales, para generar
+            diálogos artísticos interdisciplinarios entorno al arte de los nuevos medios.
           </p>
           <p>
-            Se juntan artistas de artes visuales, sonoras, literarias y del
-            movimiento en escenarios intervenidos para generar un diálogo
-            artístico interdisciplinario digno de la era digital.
-          </p>
-          <p>
-            Se da un tiempo determinado para realizar un performance improvisado
-            que haga uso de herramientas tecnológicas (luces, video mapping,
-            live coding, música electrónica, sensores, amplificación y efectos).
+          Para dicha modalidad, ayudamos a personas a agruparse para crear una propuesta de
+          performance multimediático en tiempo real, en donde las personas puedan complementarse en
+          cuanto conocimientos técnicos y conceptuales.
           </p>
         </div>
       </section>
