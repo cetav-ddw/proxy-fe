@@ -6,7 +6,7 @@ import Footer from '../sections/footer';
 
 const MainLayout = ({ mainContent, content, videoOpt }) => (
   <>
-    <Header videoSrc={videoOpt} />
+    <Header imageSrc={videoOpt} />
     <SocialMedia />
     {mainContent}
     {content}
