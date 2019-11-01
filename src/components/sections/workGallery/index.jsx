@@ -51,7 +51,6 @@ const WorkGallery = ({ mediaData }) => (
     {mediaData.length > 0 && (
       <div className="gallery__wrapper-img">
         <Image
-          key={1}
           variant="gallery__img-art"
           source={mediaData[0].url}
           alt=""
