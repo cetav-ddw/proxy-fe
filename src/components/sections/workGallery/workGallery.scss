@@ -10,9 +10,12 @@
 }
 
 .gallery__wrapper-img {
+  display: flex;
   margin: 0 auto;
+  overflow: auto;
   position: relative;
-  width: 95%;
+  width: 500px;
+  height: 560px;
   z-index: -1;
 
   @media ( min-width: $breakpoint-md) {
@@ -22,6 +25,7 @@
 
 .gallery__img-art {
   max-width: 100%;
+  object-fit: cover;
 }
 
 .gallery__bnt {
