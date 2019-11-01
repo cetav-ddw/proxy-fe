@@ -10,18 +10,16 @@ const Obra = ({ data }) => {
   const hasVideo = node.video || node.videoFile;
 
   return (
-    <>
-      <ObraLayout
-        mainContent={
-          hasVideo ? (
-            <WorkVideo mediaData={node} />
-          ) : (
-            <WorkGallery mediaData={node.images} />
-          )
-        }
-        content={<Details queryinfo={node} />}
-      />
-    </>
+    <ObraLayout
+      mainContent={
+        hasVideo ? (
+          <WorkVideo mediaData={node} />
+        ) : (
+          <WorkGallery mediaData={node.images} />
+        )
+      }
+      content={<Details queryinfo={node} />}
+    />
   );
 };
 
@@ -47,6 +45,9 @@ export const query = graphql`
           video {
             url
             thumbnailUrl
+            providerUid
+            provider
+            title
           }
           videoFile {
             url
