@@ -201,7 +201,6 @@
   @media (min-width: $breakpoint-md) {
     bottom: 10%;
     font-size: .9rem;
-    height: 150px;
     overflow: hidden;
     position: absolute;
     width: 95%;
@@ -218,11 +217,15 @@
 }
 
 .wrapper-text__paragraph--right {
+  background: linear-gradient(#fff,#fff, black);
   bottom: 15%;
+  height: 150px;
   opacity: .9;
   position: relative;
   right: 0;
   width: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   @media (min-width: $breakpoint-md) {
     bottom: 10%;
