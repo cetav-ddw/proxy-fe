@@ -1,8 +1,7 @@
 @import "../styles.scss";
 
 .desc-pabellon {
-  display: flex;
-  justify-content: space-between;
+  padding: 50px 20px;
   
   @media (min-width:$breakpoint-md) {
     padding: 0;
@@ -11,71 +10,7 @@
 
   @media (min-width: $breakpoint-xl) {
     margin: 0 auto;    
-    max-width: 1200px;
-    width: 55%;  
+    max-width: 980px;
   }
 }
 
-.desc-requi {
-  padding: 5px 15px 60px;
-
-  @media (min-width: $breakpoint-lg) {
-    margin: 0 auto;
-    max-width: 1200px;
-  }
-}
-
-.pabellon__img {
-  background: transparent url('../../images/pabellon.png') no-repeat;
-  border: 0;
-  color: transparent;
-  display: inline-block;    
-  height: 600px;
-  margin: 0;
-  overflow: hidden;
-  text-indent: 100%;
-  text-shadow: none;
-  white-space: nowrap;
-  width: 75px;
- 
-  @media (min-width:$breakpoint-md) {
-    display: inline-block;
-    margin: 0 auto;
-  }
-}
-
-.desc-pabellon__subtitle {
-  font-size: 1.5rem;
-  margin-top: 3rem;
-}
-
-.requi{
-  @media (min-width: $breakpoint-xl) {
-    padding-left: 10%;
-    width: 75%;
-  }
-}
-
-.requi__list {
-  list-style: decimal-leading-zero;
-}
-
-.requi__list-item {
-  margin: 0 auto; 
-  padding: 10px;
-
-  @media (min-width: $breakpoint-md) {
-    width: 85%;
-  }
-}
-
-.requi__title {
-  text-align: center;
-}
-
-.wrapper__des {
-  width: 75%;
-  @media (min-width: $breakpoint-xl) {
-    width: 70%;
-  }
-}

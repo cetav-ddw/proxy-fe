@@ -1,11 +1,24 @@
 @import "../styles.scss";
 
-.wrapper__des--center{
+.wrapper-hiper{
   margin: 0 auto;
-  padding: 30px;
+  padding: 20px;
+
+  ul {
+    padding: 0;
+  }
 
   @media (min-width: $breakpoint-xl) {
-    max-width: 1200px;
+    max-width: 980px;
     width: 70%;
+  }
+}
+
+.wrapper-hiper__item {
+  margin: 15px 0;
+  font-size: .8rem;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 1.2rem;
   }
 }
