@@ -12,7 +12,7 @@
 .gallery__wrapper-img {
   margin: 0 auto;
   position: relative;
-  width: 95%;
+  max-width: 960px;
   z-index: -1;
 
   @media ( min-width: $breakpoint-md) {
@@ -21,7 +21,10 @@
 }
 
 .gallery__img-art {
+  display: block;
+  margin: auto;
   max-width: 100%;
+  height: auto;
 }
 
 .gallery__bnt {
