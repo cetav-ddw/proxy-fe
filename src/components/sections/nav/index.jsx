@@ -14,9 +14,7 @@ class Nav extends Component {
 
   handleClick() {
     const { toggle } = this.state;
-    this.setState({ toggle: !toggle },() => {
-    toggle ? document.body.style.overflow = 'visible' : document.body.style.overflow = 'hidden' ;
-    });
+    this.setState({ toggle: !toggle });
   }
   render() {
     const { toggle } = this.state;

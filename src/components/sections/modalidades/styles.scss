@@ -23,7 +23,6 @@
 }
 
 .column-type__content {
-  max-width: 90%;
   order: 2;
   padding: 0 20px; 
 
@@ -40,6 +39,7 @@
 }
 
 .column-type__text--right {
+  font-size: 1rem;
   text-align: right;
 }
 

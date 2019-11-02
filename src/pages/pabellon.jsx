@@ -4,6 +4,7 @@ import SEO from '../components/seo';
 import Layout from '../components/layouts/Layout';
 import SocialMedia from '../components/sections/social-media';
 import ListaObras from '../components/sections/obras';
+import '../scss/pages/pabellon.scss';
 
 const titlePage = 'Pabellón/Pavillion';
 
@@ -13,13 +14,12 @@ const Obras = ({ data }) => {
 
   return (
     <>
-
       <SEO title={titlePage} />
       <Layout>
         <SocialMedia />          
         <section className="desc-pabellon">
-          <h1 className="pabellon__img">Pabellón</h1>
-          <div className="wrapper__des">
+          <h1 className="pabellon">Pabellón</h1>
+          <div>
             <p>
               En esta modalidad se participó con una obra de nuevos medios
               relacionados con la hiperrealidad para ser expuesta durante las
