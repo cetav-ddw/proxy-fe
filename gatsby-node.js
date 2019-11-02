@@ -13,16 +13,30 @@ exports.createPages = ({ graphql, actions }) => {
             node {
               slug
             }
+            next {
+              slug
+            }
+            previous {
+              slug
+            }
           }
         }
       }
     `).then(result => {
-      result.data.allDatoCmsObra.edges.map(({ node: obra }) => {
+      result.data.allDatoCmsObra.edges.map(({node, next, previous}) => {
+        const { slug } = node;
+
+        function getSlug(node){
+          return node ? node.slug : null
+        }
+
         createPage({
-          path: obra.slug,
+          path: slug,
           component: path.resolve(`./src/templates/obra.jsx`),
           context: {
-            slug: obra.slug
+            slug: slug,
+            previous: getSlug(previous),
+            next: getSlug(next)
           }
         });
       });
