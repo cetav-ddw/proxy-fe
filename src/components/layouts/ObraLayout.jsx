@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 import Header from '../sections/header';
 import Footer from '../sections/footer';
 
-const obraLayout = ({ mainContent, content, imgOpt }) => (
+const obraLayout = ({ children, imgOpt }) => (
   <>
     <Header ImageSrc={imgOpt} />
-    {mainContent}
-    {content}
+    {children}
     <Footer />
   </>
 );
