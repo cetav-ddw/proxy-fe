@@ -8,7 +8,7 @@ const Modalidades = () => (
     <h2>Modalidades</h2>
     <div className="column-type">
       <div className="column-type__content">
-        <h3 className="column-type__title content-title">Pabellon</h3>
+        <h3 className="column-type__title content-title">Pabellón/Pavillion</h3>
         <p className="column-type__text">
           Participa con una obra de nuevos medios relacionados con la hiperrealidad
         </p>
