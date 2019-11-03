@@ -16,8 +16,6 @@ Layout.defaultProps = {
 };
 
 Layout.propTypes = {
-  mainContent: PropTypes.node,
-  content: PropTypes.node,
   imgOpt: PropTypes.string
 };
 
