@@ -8,7 +8,10 @@ const WorkGallery = ({ mediaData }) => (
   <section className="gallery">
     {mediaData.length > 1 && (
       <>
-        <Button variant="gallery__bnt gallery__bnt--left">
+        <Button
+          variant="gallery__bnt gallery__bnt--left"
+          handleClickbtn={() => {}}
+        >
           <svg
             className="gallery__svg"
             width="14px"
@@ -27,7 +30,10 @@ const WorkGallery = ({ mediaData }) => (
             ></polyline>
           </svg>
         </Button>
-        <Button variant="gallery__bnt gallery__bnt--right">
+        <Button
+          variant="gallery__bnt gallery__bnt--right"
+          handleClickbtn={() => {}}
+        >
           <svg
             className="gallery__svg"
             width="14px"
@@ -50,11 +56,7 @@ const WorkGallery = ({ mediaData }) => (
     )}
     {mediaData.length > 0 && (
       <div className="gallery__wrapper-img">
-        <Image
-          variant="gallery__img-art"
-          source={mediaData[0].url}
-          alt=""
-        />
+        <Image variant="gallery__img-art" source={mediaData[0].url} alt="" />
       </div>
     )}
   </section>

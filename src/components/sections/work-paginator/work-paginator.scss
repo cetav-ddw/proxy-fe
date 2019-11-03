@@ -1,0 +1,33 @@
+@import '../../../scss/settings/vars.scss';
+
+.work-pagination__item {
+  color: $white;
+  display: block;
+  font-family: $title;
+  padding: 2rem 0;
+  text-transform: uppercase;
+  
+  &:hover {
+    opacity: .5;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    display: inline-block;
+    padding: 8rem 0;
+    width: 50%;
+  }
+}
+
+.work-pagination__item--next {
+  background-color: rgba(54, 159, 181, .25);
+}
+
+.work-pagination__item--prev {
+  background-color: rgba(43, 0, 121, .25);
+}
+
+.work-pagination__wrap {
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+}

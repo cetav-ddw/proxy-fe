@@ -14,20 +14,22 @@ exports.createPages = ({ graphql, actions }) => {
               slug
             }
             next {
+              title
               slug
             }
             previous {
+              title
               slug
             }
           }
         }
       }
     `).then(result => {
-      result.data.allDatoCmsObra.edges.map(({node, next, previous}) => {
+      result.data.allDatoCmsObra.edges.map(({ node, next, previous }) => {
         const { slug } = node;
 
-        function getSlug(node){
-          return node ? node.slug : null
+        function getPaginationData(node) {
+          return node ? node : null;
         }
 
         createPage({
@@ -35,8 +37,8 @@ exports.createPages = ({ graphql, actions }) => {
           component: path.resolve(`./src/templates/obra.jsx`),
           context: {
             slug: slug,
-            previous: getSlug(previous),
-            next: getSlug(next)
+            previous: getPaginationData(previous),
+            next: getPaginationData(next)
           }
         });
       });

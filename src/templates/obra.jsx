@@ -1,10 +1,10 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import ObraLayout from '../components/layouts/ObraLayout';
-import Details from '../components/sections/workdetails/';
-import WorkGallery from '../components/sections/workGallery/';
+import Details from '../components/sections/workdetails';
+import WorkGallery from '../components/sections/workGallery';
 import WorkVideo from '../components/sections/work-video';
-import { Link } from 'gatsby';
+import WorkPaginator from '../components/sections/work-paginator';
 
 const Obra = ({ data, pageContext }) => {
   const node = data.allDatoCmsObra.edges[0].node;
@@ -19,8 +19,7 @@ const Obra = ({ data, pageContext }) => {
         <WorkGallery mediaData={node.images} />
       )}
       <Details queryinfo={node} />
-      {previous && <Link to={previous}>Anterior</Link>}
-      {next && <Link to={next}>Siguiente</Link>}
+      <WorkPaginator next={next} previous={previous} />
     </ObraLayout>
   );
 };
