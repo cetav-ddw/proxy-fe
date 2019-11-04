@@ -72,8 +72,20 @@
 .wapper-info {
 
   @media (min-width: $breakpoint-md) {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
+}
+
+.about-artist__more-works {
+  padding: 30px 0;
+
+  h2 {
+    text-align: left;
+  }
+}
+
+.container-images {
+  columns: 2;
 }

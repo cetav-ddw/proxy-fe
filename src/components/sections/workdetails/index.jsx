@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from '../../units/Image';
 import './workDetails.scss';
 
 const detailsObra = ({ queryinfo }) => (
@@ -23,8 +24,17 @@ const detailsObra = ({ queryinfo }) => (
         <p className="about-artist__paragraph">{queryinfo.bio}</p>
       </div>
     </div>
-    
+    {
+      queryinfo.images.length > 1 &&
+      <div className="about-artist__more-works">
+        <h2>Otras Obras</h2>
+        <div className="container-images">
+          {
+            queryinfo.images.map((item, index) => index > 0 && <Image key={index} variant="gallery__img-art" source={item.url} alt="" />)
+          }
+        </div>
+      </div>
+    }
   </section>
 );
-
 export default detailsObra;
