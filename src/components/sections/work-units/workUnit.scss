@@ -18,6 +18,15 @@
 	}
 }
 
+.works__text {
+  margin: auto;
+  padding: 5px 20px;
+
+  @media (min-width: $breakpoint-md) {
+    width: 75%;
+	}
+}
+
 .works__content-work {
   display: flex;
   flex-direction: column;
@@ -60,6 +69,8 @@
 
 .wrapper-image__image {
   box-shadow: 2px 2px 0px rgba(21, 224, 37, .25);
+  display: block;
+  margin: auto;
   max-width: 100%;
   padding: 0 5px 5px 0;
 }
