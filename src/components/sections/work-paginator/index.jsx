@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 import './work-paginator.scss';
 
 function ViewAll({ modifier }) {
-  console.log('modifier', modifier);
   return (
     <Link
       to="/pabellon"
