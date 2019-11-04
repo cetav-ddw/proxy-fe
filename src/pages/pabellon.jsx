@@ -13,12 +13,11 @@ const Obras = ({ data }) => {
 
   return (
     <>
-
       <SEO title={titlePage} />
       <Layout>
-        <SocialMedia />          
+        <SocialMedia />
         <section className="desc-pabellon">
-          <h1 className="pabellon__img">Pabellón</h1>
+          <h1 className="pabellon__img">Pabellón/Pavillion</h1>
           <div className="wrapper__des">
             <p>
               En esta modalidad se participó con una obra de nuevos medios

@@ -16,12 +16,24 @@ const IndexPage = () => {
       <SEO title={titlePage} />
       <Layout imgOpt="home-videos/Home.jpg">
         <SocialMedia />
-        <div className="wrapper__des--center">
+        <div className="wrapper-hiper">
           <h2>¿QUE ES LA HIPERREALIDAD?</h2>
           <ul>
-            <li>&#34;Es la interpretación descompensada de la realidad, creada por nosotros que se admite como verosímil y que llega a sustituir a la realidad en la que se basó&#34;.</li>
-            <li>&#34;En la hiperrealidad los simuladores buscan hacer que toda la realidad coincida con sus modelos de simulación&#34;.</li>
-            <li>&#34;Es un medio para describir la forma en la conciencia define lo que es considerado real, en un mundo donde los medios de comunicación pueden modelar y filtrar de manera radical la manera en que percibimos un acontecimiento o experiencia&#34;.</li>
+            <li className="wrapper-hiper__item">
+              &#34;Es la interpretación descompensada de la realidad, creada por
+              nosotros que se admite como verosímil y que llega a sustituir a la
+              realidad en la que se basó&#34;.
+            </li>
+            <li className="wrapper-hiper__item">
+              &#34;En la hiperrealidad los simuladores buscan hacer que toda la
+              realidad coincida con sus modelos de simulación&#34;.
+            </li>
+            <li className="wrapper-hiper__item">
+              &#34;Es un medio para describir la forma en la conciencia define
+              lo que es considerado real, en un mundo donde los medios de
+              comunicación pueden modelar y filtrar de manera radical la manera
+              en que percibimos un acontecimiento o experiencia&#34;.
+            </li>
           </ul>
         </div>
         <Modalidades />
