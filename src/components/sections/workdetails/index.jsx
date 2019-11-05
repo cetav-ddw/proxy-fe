@@ -17,7 +17,7 @@ const detailsObra = ({ queryinfo }) => (
           {queryinfo.description}
           {
             queryinfo.link && 
-            <a href={queryinfo.link} target="_blank" className="external-link">Ver obra completa</a>
+            <a rel="noopener noreferrer" href={queryinfo.link} target="_blank" className="external-link">Ver obra completa</a>
           }
         </p>
       </div>
