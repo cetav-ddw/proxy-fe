@@ -13,7 +13,13 @@ const detailsObra = ({ queryinfo }) => (
           </li>
           <li className="about-artist__item year">Año: {queryinfo.year}</li>
         </ul>
-        <p className="about-artist__paragraph">{queryinfo.description}</p>
+        <p className="about-artist__paragraph">
+          {queryinfo.description}
+          {
+            queryinfo.link && 
+            <a href={queryinfo.link} target="_blank" className="external-link">Ver obra completa</a>
+          }
+        </p>
       </div>
     </div>
     <div className="about-artist__wrapper-info">

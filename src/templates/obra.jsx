@@ -43,6 +43,7 @@ export const query = graphql`
           images {
             url
           }
+          link
           video {
             url
             thumbnailUrl
