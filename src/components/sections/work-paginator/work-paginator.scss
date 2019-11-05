@@ -6,24 +6,28 @@
   font-family: $title;
   padding: 2rem 0;
   text-transform: uppercase;
-  
-  &:hover {
-    opacity: .5;
-  }
 
   @media (min-width: $breakpoint-md) {
     display: inline-block;
-    padding: 8rem 0;
+    padding: 4rem 0;
     width: 50%;
   }
 }
 
 .work-pagination__item--next {
-  background-color: rgba(54, 159, 181, .25);
+  background: $turquoise url("../../../images/bg-Btn.png") no-repeat;
+
+  &:hover {
+    background-color: $turquoise-hover;
+  }
 }
 
 .work-pagination__item--prev {
-  background-color: rgba(43, 0, 121, .25);
+  background: $fucsia url("../../../images/bg-Btn.png") no-repeat;
+
+  &:hover {
+    background-color: $fucsia-hover;
+  }
 }
 
 .work-pagination__wrap {
