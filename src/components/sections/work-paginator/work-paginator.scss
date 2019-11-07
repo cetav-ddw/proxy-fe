@@ -1,36 +1,50 @@
 @import '../../../scss/settings/vars.scss';
 
 .work-pagination__item {
+  border: 1px solid green;
   color: $white;
-  display: block;
+  display: inline-block;
   font-family: $title;
+  margin: 40px 2px;
   padding: 2rem 0;
   text-transform: uppercase;
+  width: 49%;
 
   @media (min-width: $breakpoint-md) {
     display: inline-block;
+    font-size: $txt-medium;
+    margin-left: 6px;
     padding: 4rem 0;
-    width: 50%;
+    width: 49%;
   }
 }
 
 .work-pagination__item--next {
-  background: $turquoise url("../../../images/bg-Btn.png") no-repeat;
+  background: $black url("../../../images/bg-Btn-green.png") round;
 
   &:hover {
-    background-color: $turquoise-hover;
+    background-color: $green-transparent;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    margin: 100px 10px;
   }
 }
 
 .work-pagination__item--prev {
-  background: $fucsia url("../../../images/bg-Btn.png") no-repeat;
-
+  background: $black url("../../../images/bg-Btn-green.png") round;
+  
   &:hover {
-    background-color: $fucsia-hover;
+    background-color:  $green-transparent;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    margin: 100px 10px;
   }
 }
 
 .work-pagination__wrap {
+  display: flex;
   margin: 0 auto;
   max-width: 1200px;
   text-align: center;
