@@ -16,7 +16,7 @@ const Obra = ({ data, pageContext }) => {
       {hasVideo ? (
         <WorkVideo mediaData={node} />
       ) : (
-        <WorkGallery mediaData={node.images} />
+        <WorkGallery mediaData={node.images} title={node.title} />
       )}
       <Details queryinfo={node} />
       <WorkPaginator next={next} previous={previous} />
@@ -42,6 +42,9 @@ export const query = graphql`
           }
           images {
             url
+            fluid(imgixParams: { fm: "jpg", auto: "compress" }) {
+              ...GatsbyDatoCmsFluid
+            }
           }
           link
           video {
